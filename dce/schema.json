@@ -1,0 +1,130 @@
+{
+  "type": "object",
+  "properties": {
+    "dataSources": {
+      "type": "array",
+      "default": [],
+      "items": {
+        "type": "string",
+        "enum": [
+          "questionnaires",
+          "cognitive_measures",
+          "physical_measures",
+          "biological_samples",
+          "administratives_databases",
+          "mobile_data_collection",
+          "social_media",
+          "geospatial_technology",
+          "crowdsourcing_crowseeding",
+          "artificial_intelligence",
+          "passive_data_collection",
+          "others"
+        ]
+      },
+      "title": "t(data-collection-event.data-sources)"
+    },
+    "administrativeDatabases": {
+      "type": "array",
+      "title": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.administratives_databases.title)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "health_databases",
+          "vital_statistics_databases",
+          "socioeconomic_databases",
+          "environmental_databases"
+        ]
+      }
+    },
+    "mobileDataCollection": {
+      "type": "array",
+      "title": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.mobile_data_collection.title)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "mobile_phone",
+          "smartphone",
+          "smartwatch_wearables",
+          "tablet_laptop",
+          "others"
+        ]
+      }
+    },
+    "otherMobileDataCollection": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.other-mobile-data-collection)"
+    },
+    "socialMedia": {
+      "type": "array",
+      "title": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.social_media.title)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "facebook",
+          "twitter",
+          "linkedin",
+          "others"
+        ]
+      }
+    },
+    "otherSocialMedia": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.other-social-media)"
+    },
+    "geospatialTechnology": {
+      "type": "array",
+      "title": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.geospatial_technology.title)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "global_navigation_satellite_systems",
+          "geographical_information_systems",
+          "internet_mapping",
+          "others"
+        ]
+      }
+    },
+    "otherGeospatialTechnology": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.other-geospatial-technology)"
+    },
+    "otherDataSources": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.other-data-sources)"
+    },
+    "bioSamples": {
+      "type": "array",
+      "title": "t(data-collection-event.bio-samples)",
+      "default": [],
+      "items": {
+        "type": "string",
+        "enum": [
+          "blood",
+          "urine",
+          "saliva",
+          "hair",
+          "cord_blood",
+          "tissues",
+          "nail",
+          "buccal_cells",
+          "others"
+        ]
+      }
+    },
+    "tissueTypes": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.tissue-types)"
+    },
+    "otherBioSamples": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.other-bio-samples)"
+    }
+  },
+  "required": []
+}

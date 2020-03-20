@@ -1,0 +1,86 @@
+{
+  "acronym": [
+    {
+      "lang": "en", 
+      "value": "AGRICOH"
+    }
+  ], 
+  "content": "{\"dataEntryDate\":\"2020-03-19\",\"yearCreated\":2010,\"countries\":[\"AUS\",\"CAN\",\"CHL\",\"CRI\",\"DNK\",\"FRA\",\"NZL\",\"NOR\",\"KOR\",\"ZAF\",\"GBR\",\"USA\"],\"setting\":\"international\",\"cohortCriteria\":\"All cohort study health outcomes in relation to environmental and occupational exposures in agricultural settings with the exception of three general population cohorts involving a large number of agricultural populations or oversampling individuals in agricultural areas.\",\"socioEnvContext\":[\"air_pollution\"],\"nbParticipants\":{\"total\":1300000,\"harmonized\":316270},\"age\":{\"min\":0,\"max\":150},\"funding\":\"Financed by the US National Cancer Institute and the International Agency for Research on Cancer.\",\"methodology\":{\"nbCohorts\":{\"total\":null,\"harmonized\":null},\"harmonizationStrategy\":\"ex_post\",\"moreCohortsToBeHarmonized\":true,\"nbHarmonizedVariables\":null,\"software\":\"na\",\"analyses\":\"meta\",\"access\":{\"metadata\":\"under_request\",\"individualData\":\"na\"},\"dataProcessingMethods\":\"na\",\"supplementaryInformation\":\"Harmonization has been done for specific analyses.\\nSource: El-Zaemey S, Schinasi LH, Ferro G, et al Animal farming and the risk of lymphohaematopoietic cancers: a meta-analysis of three cohort studies within the AGRICOH consortium Occupational and Environmental Medicine 2019;76:827-837.\"},\"typesOfCohorts\":[\"population_cohort\"],\"website\":\"https://agricoh.iarc.fr/\"}", 
+  "description": [
+    {
+      "lang": "en", 
+      "value": "The objective of AGRICOH is to support and mantain collaboration and data sharing/pooling to research the association between agricultural exposures and different health outcomes, with emphasis on associations that involve rare exposures and/or health outcomes, and for which data pooling represents a significant gain in statistical power compared to analysis of individual cohorts."
+    }
+  ], 
+  "id": "agricoh", 
+  "membershipSortOrder": [
+    {
+      "personIds": [
+        "5e733097e64ada00423d63d7"
+      ], 
+      "role": "contact"
+    }
+  ], 
+  "memberships": [
+    {
+      "members": [
+        {
+          "email": "agricoh@iarc.fr", 
+          "firstName": "NA", 
+          "id": "5e733097e64ada00423d63d7", 
+          "lastName": "NA", 
+          "networkMemberships": [
+            {
+              "parentAcronym": [
+                {
+                  "lang": "en", 
+                  "value": "AGRICOH"
+                }
+              ], 
+              "parentId": "agricoh", 
+              "parentName": [
+                {
+                  "lang": "en", 
+                  "value": "A consortium of agricultural cohort studies"
+                }
+              ], 
+              "role": "contact"
+            }
+          ]
+        }
+      ], 
+      "role": "contact"
+    }
+  ], 
+  "name": [
+    {
+      "lang": "en", 
+      "value": "A consortium of agricultural cohort studies"
+    }
+  ], 
+  "obiba.mica.EntityStateDto.state": {
+    "permissions": {
+      "delete": true, 
+      "edit": true, 
+      "publish": true, 
+      "view": true
+    }, 
+    "publicationDate": "2020-03-19T09:50:52.602Z", 
+    "publishedBy": "dgmarin", 
+    "publishedId": "2c4ae4aba294fba38e30d2ecd87122322a11dbe3", 
+    "publishedTag": "1", 
+    "revisionStatus": "DRAFT", 
+    "revisionsAhead": 0
+  }, 
+  "permissions": {
+    "delete": true, 
+    "edit": true, 
+    "publish": true, 
+    "view": true
+  }, 
+  "published": true, 
+  "timestamps": {
+    "created": "2020-03-19T08:39:22.835Z", 
+    "lastUpdate": "2020-03-19T08:43:04.190Z"
+  }
+}

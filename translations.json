@@ -1,0 +1,182 @@
+{
+  "en": {
+    "initiative": {
+      "dataEntryDate": {
+        "title": "Data entry date",
+        "description": "Date at which information was collected"
+      },
+      "yearCreated": {
+        "title": "Year created"
+      },
+      "typesOfCohorts": {
+        "title": "Types of cohorts",
+        "population_cohort": "Population cohort",
+        "patient_cohort": "Patient/disease cohort",
+        "clinical_trial": "Clinical trial",
+        "description": ""
+      },
+      "countries": {
+        "title": "Countries",
+        "description": ""
+      },
+      "region": {
+        "title": "Region",
+        "description": ""
+      },
+      "setting": {
+        "title": "Setting",
+        "regional": "Local/regional",
+        "national": "National",
+        "international": "International",
+        "description": ""
+      },
+      "funding": {
+        "title": "Funding",
+        "description": ""
+      },
+      "cohortCriteria": {
+        "title": "Criteria of cohort's to be included",
+        "description": ""
+      },
+      "socioEnvContext": {
+        "title": "Socio-environmental context",
+        "air_pollution": "Air pollution",
+        "climate_change": "Climate change",
+        "environmental_hazards": "Environmental hazards",
+        "short_half_life_chemicals": "Short-half-life chemicals",
+        "urbanization": "Urbanization",
+        "work_related_stress": "Work-related stress",
+        "work_life_balance": "Work/life balance",
+        "migration": "Migration",
+        "vnps": "VNPs",
+        "internet_use": "Internet use",
+        "social_media_use": "Social media use",
+        "gaming_online": "Gaming online",
+        "gaming_offline": "Gaming offline",
+        "other": "Other",
+        "description": ""
+      },
+      "socioEnvContextOther": {
+        "title": "Other socio-environmental context",
+        "description": ""
+      },
+      "nbParticipants": {
+        "title": "Number of participants"
+      },
+      "nbParticipantsTotal": {
+        "title": "Total",
+        "description": ""
+      },
+      "nbParticipantsHarmonized": {
+        "title": "With harmonized data",
+        "description": ""
+      },
+      "ageRange": {
+        "title": "Age range of the samples"
+      },
+      "ageMin": {
+        "title": "Minimum age",
+        "description": ""
+      },
+      "ageMax": {
+        "title": "Maximum age",
+        "description": ""
+      },
+      "methodology": {
+        "title": "Methodology for harmonization and integration"
+      },
+      "harmonizationStrategy": {
+        "title": "Strategy of harmonization",
+        "ex_ante": "ex-ante",
+        "ex_post": "ex-post",
+        "description": ""
+      },
+      "harmonizationType": {
+        "title": "Type of harmonization",
+        "prospective": "Prospective",
+        "retrospective": "Retrospective",
+        "description": ""
+      },
+      "nbCohorts": {
+        "title": "Number of cohorts"
+      },
+      "nbCohortsTotal": {
+        "title": "Total",
+        "description": ""
+      },
+      "nbCohortsHarmonized": {
+        "title": "With harmonized data",
+        "description": ""
+      },
+      "moreCohortsToBeHarmonized": {
+        "title": "Will more cohorts be harmonized?",
+        "description": ""
+      },
+      "nbHarmonizedVariables": {
+        "title": "Number of harmonized variables (max.)",
+        "description": ""
+      },
+      "software": {
+        "title": "Software",
+        "description": "",
+        "regular": "Regular statistical software",
+        "specific": "Specific software",
+        "other": "Other"
+      },
+      "softwareOther": {
+        "title": "Other software",
+        "description": ""
+      },
+      "analyses": {
+        "title": "Analyses",
+        "description": "",
+        "meta": "Meta-analyses",
+        "pooled": "Pooled analyses",
+        "federated": "Federated analyses",
+        "other": "Other"
+      },
+      "analysesOther": {
+        "title": "Other analyses",
+        "description": ""
+      },
+      "dataProcessingMethods": {
+        "title": "Data processing methods",
+        "description": "",
+        "algorithmic": "Algorithmic",
+        "calibration": "Calibration",
+        "standardisation": "Standardisation",
+        "latent_variable_model": "Latent variable model",
+        "multiple_imputation": "Multiple imputation",
+        "others": "Others"
+      },
+      "dataProcessingMethodsOthers": {
+        "title": "Other data proccessing methods",
+        "description": ""
+      },
+      "access": {
+        "title": "Access"
+      },
+      "metadata": {
+        "title": "Availability of metadata",
+        "description": ""
+      },
+      "individualData": {
+        "title": "Availability of individual data",
+        "description": ""
+      },
+      "supplementaryInformation": {
+        "title": "Supplementary information",
+        "description": ""
+      },
+      "yes": "Yes",
+      "no": "No",
+      "na": "NA",
+      "under_request": "Under request"
+    },
+    "data-collection-event": {
+      "other-mobile-data-collection": "Other mobile data collection",
+      "other-social-media": "Other social media",
+      "other-geospatial-technology": "Other geospatial technology"
+    }
+  }
+}

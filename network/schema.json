@@ -1,0 +1,237 @@
+{
+  "type": "object",
+  "properties": {
+    "website": {
+      "title": "t(website)",
+      "type": "string"
+    },
+    "dataEntryDate": {
+      "title": "t(initiative.dataEntryDate.title)",
+      "type": "string",
+      "format": "datepicker"
+    },
+    "yearCreated": {
+      "title": "t(initiative.yearCreated.title)",
+      "type": "number"
+    },
+    "typesOfCohorts": {
+      "title": "t(initiative.typesOfCohorts.title)",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "population_cohort",
+          "patient_cohort",
+          "clinical_trial"
+        ]
+      }
+    },
+    "countries": {
+      "type": "array",
+      "format": "obibaCountriesUiSelect",
+      "title": "t(initiative.countries.title)"
+    },
+    "region": {
+      "title": "t(initiative.region.title)",
+      "type": "string"
+    },
+    "setting": {
+      "type": "string",
+      "title": "t(initiative.setting.title)",
+      "enum": [
+        "regional",
+        "national",
+        "international"
+      ]
+    },
+    "funding": {
+      "title": "t(initiative.funding.title)",
+      "type": "string"
+    },
+    "cohortCriteria": {
+      "title": "t(initiative.cohortCriteria.title)",
+      "type": "string"
+    },
+    "socioEnvContext": {
+      "title": "t(initiative.socioEnvContext.title)",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "air_pollution",
+          "climate_change",
+          "environmental_hazards",
+          "short_half_life_chemicals",
+          "urbanization",
+          "work_related_stress",
+          "work_life_balance",
+          "migration",
+          "vnps",
+          "internet_use",
+          "social_media_use",
+          "gaming_online",
+          "gaming_offline",
+          "other",
+          "na"
+        ]
+      }
+    },
+    "socioEnvContextOther": {
+      "title": "t(initiative.socioEnvContextOther.title)",
+      "type": "string"
+    },
+    "nbParticipants": {
+      "type": "object",
+      "properties": {
+        "total": {
+          "type": "number",
+          "title": "t(initiative.nbParticipantsTotal.title)"
+        },
+        "harmonized": {
+          "type": "number",
+          "title": "t(initiative.nbParticipantsHarmonized.title)"
+        }
+      }
+    },
+    "age": {
+      "type": "object",
+      "properties": {
+        "min": {
+          "type": "number",
+          "title": "t(initiative.ageMin.title)"
+        },
+        "max": {
+          "type": "number",
+          "title": "t(initiative.ageMax.title)"
+        }
+      }
+    },
+    "methodology": {
+      "type": "object",
+      "properties": {
+        "harmonizationStrategy": {
+          "type": "string",
+          "title": "t(initiative.harmonizationStrategy.title)",
+          "enum": [
+            "ex_ante",
+            "ex_post",
+            "na"
+          ]
+        },
+        "harmonizationType": {
+          "type": "string",
+          "title": "t(initiative.harmonizationType.title)",
+          "enum": [
+            "prospective",
+            "retrospective",
+            "na"
+          ]
+        },
+        "nbCohorts": {
+          "type": "object",
+          "properties": {
+            "total": {
+              "type": "number",
+              "title": "t(initiative.nbCohortsTotal.title)"
+            },
+            "harmonized": {
+              "type": "number",
+              "title": "t(initiative.nbCohortsHarmonized.title)"
+            }
+          }
+        },
+        "moreCohortsToBeHarmonized": {
+          "type": "boolean",
+          "title": "t(initiative.moreCohortsToBeHarmonized.title)"
+        },
+        "nbHarmonizedVariables": {
+          "type": "number",
+          "title": "t(initiative.nbHarmonizedVariables.title)"
+        },
+        "software": {
+          "type": "string",
+          "title": "t(initiative.software.title)",
+          "enum": [
+            "regular",
+            "specific",
+            "other",
+            "na"
+          ]
+        },
+        "softwareOther": {
+          "title": "t(initiative.softwareOther.title)",
+          "type": "string"
+        },
+        "analyses": {
+          "title": "t(initiative.analyses.title)",
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "meta",
+              "pooled",
+              "federated",
+              "other",
+              "na"
+            ]
+          }
+        },
+        "analysesOther": {
+          "title": "t(initiative.analysesOther.title)",
+          "type": "string"
+        },
+        "dataProcessingMethods": {
+          "type": "string",
+          "title": "t(initiative.dataProcessingMethods.title)",
+          "enum": [
+            "algorithmic",
+            "calibration",
+            "standardisation",
+            "latent_variable_model",
+            "multiple_imputation",
+            "others",
+            "na"
+          ]
+        },
+        "dataProcessingMethodsOthers": {
+          "title": "t(initiative.dataProcessingMethodsOthers.title)",
+          "type": "string"
+        },
+        "access": {
+          "type": "object",
+          "properties": {
+            "metadata": {
+              "type": "string",
+              "title": "t(initiative.metadata.title)",
+              "enum": [
+                "yes",
+                "under_request",
+                "no",
+                "na"
+              ]
+            },
+            "individualData": {
+              "type": "string",
+              "title": "t(initiative.individualData.title)",
+              "enum": [
+                "yes",
+                "under_request",
+                "no",
+                "na"
+              ]
+            }
+          }
+        },
+        "supplementaryInformation": {
+          "title": "t(initiative.supplementaryInformation.title)",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "dataEntryDate",
+    "typesOfCohorts",
+    "setting"
+  ]
+}

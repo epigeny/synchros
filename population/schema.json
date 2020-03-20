@@ -1,0 +1,215 @@
+{
+  "type": "object",
+  "properties": {
+    "numberOfParticipants": {
+      "type": "object",
+      "x-schema-form": {
+        "notitle": true
+      },
+      "properties": {
+        "participant": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "number",
+              "title": "t(numberOfParticipants.participants)"
+            },
+            "noLimit": {
+              "type": "boolean",
+              "title": "t(numberOfParticipants.no-limit)"
+            }
+          },
+          "x-schema-form": {
+            "notitle": true
+          }
+        },
+        "sample": {
+          "type": "object",
+          "properties": {
+            "number": {
+              "type": "number",
+              "title": "t(numberOfParticipants.sample)"
+            },
+            "noLimit": {
+              "type": "boolean",
+              "title": "t(numberOfParticipants.no-limit)"
+            }
+          },
+          "x-schema-form": {
+            "notitle": true
+          }
+        },
+        "info": {
+          "type": "object",
+          "format": "localizedString",
+          "title": "t(numberOfParticipants.suppl-info)"
+        }
+      }
+    },
+    "info": {
+      "type": "object",
+      "format": "localizedString"
+    },
+    "recruitment": {
+      "type": "object",
+      "properties": {
+        "info": {
+          "type": "object",
+          "format": "localizedString",
+          "title": "t(study.recruitment-sources.info)"
+        },
+        "dataSources": {
+          "type": "array",
+          "title": "t(study_taxonomy.vocabulary.populations-recruitment-dataSources.title)",
+          "default": [],
+          "items": {
+            "type": "string",
+            "enum": [
+              "general_population",
+              "specific_population",
+              "clinical_patients",
+              "exist_studies",
+              "other"
+            ]
+          }
+        },
+        "generalPopulationSources": {
+          "type": "array",
+          "title": "t(study.recruitment-sources.general-population)",
+          "items": {
+            "type": "string",
+            "enum": [
+              "volunteer",
+              "selected_samples",
+              "random"
+            ]
+          }
+        },
+        "specificPopulationSources": {
+          "type": "array",
+          "title": "t(study.recruitment-sources.specific-population)",
+          "items": {
+            "type": "string",
+            "enum": [
+              "clinic_patients",
+              "specific_association",
+              "other"
+            ]
+          }
+        },
+        "otherSpecificPopulationSource": {
+          "type": "object",
+          "format": "localizedString",
+          "title": "t(study.recruitment-sources.other-specific-population)"
+        },
+        "studies": {
+          "type": "array",
+          "title": "t(study.recruitment-sources.studies)",
+          "items": {
+            "type": "object",
+            "format": "localizedString"
+          }
+        },
+        "otherSource": {
+          "type": "object",
+          "format": "localizedString",
+          "title": "t(study.recruitment-sources.other)"
+        }
+      }
+    },
+    "selectionCriteria": {
+      "type": "object",
+      "properties": {
+        "gender": {
+          "type": [
+            "null",
+            "string"
+          ],
+          "enum": [
+            "men",
+            "women",
+            null
+          ],
+          "title": "t(population.gender)"
+        },
+        "ageMin": {
+          "type": "number",
+          "title": "t(population.ageMin)"
+        },
+        "ageMax": {
+          "type": "number",
+          "title": "t(population.ageMax)"
+        },
+        "otherCriteria": {
+          "type": "object",
+          "format": "localizedString",
+          "title": "t(population.otherCriteria)"
+        },
+        "info": {
+          "type": "object",
+          "format": "localizedString",
+          "title": "t(population.info)"
+        },
+        "countriesIso": {
+          "type": "array",
+          "format": "obibaCountriesUiSelect",
+          "title": "t(population.countries)"
+        },
+        "territory": {
+          "type": "object",
+          "format": "localizedString",
+          "title": "t(study.selection-criteria.territory)"
+        },
+        "ethnicOrigin": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "format": "localizedString"
+          },
+          "title": "t(study.selection-criteria.ethnic-origin)"
+        },
+        "healthStatus": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "format": "localizedString"
+          },
+          "title": "t(study.selection-criteria.health-status)"
+        },
+        "criteria": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "gravidity",
+              "newborn",
+              "twin"
+            ]
+          },
+          "title": "t(study.selection-criteria.criteria)"
+        },
+        "pregnantWomen": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "first_trimester",
+              "second_trimester",
+              "third_trimester"
+            ]
+          },
+          "title": "t(study.selection-criteria.pregnant-women)"
+        },
+        "newborn": {
+          "type": "boolean",
+          "title": "t(study.selection-criteria.newborn)"
+        },
+        "twins": {
+          "type": "boolean",
+          "title": "t(study.selection-criteria.twins)"
+        }
+      }
+    }
+  },
+  "required": []
+}

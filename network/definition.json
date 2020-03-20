@@ -1,0 +1,486 @@
+[
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": []
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": []
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          "website",
+          {
+            "key": "dataEntryDate",
+            "description": "t(initiative.dataEntryDate.description)",
+            "dateOptions": {
+              "dateFormat": "yyyy-MM-dd"
+            },
+            "validationMessage": "t(date-error)"
+          },
+          {
+            "key": "yearCreated"
+          },
+          {
+            "key": "typesOfCohorts",
+            "description": "t(initiative.typesOfCohorts.description)",
+            "titleMap": [
+              {
+                "value": "population_cohort",
+                "name": "t(initiative.typesOfCohorts.population_cohort)"
+              },
+              {
+                "value": "patient_cohort",
+                "name": "t(initiative.typesOfCohorts.patient_cohort)"
+              },
+              {
+                "value": "clinical_trial",
+                "name": "t(initiative.typesOfCohorts.clinical_trial)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          {
+            "key": "countries",
+            "type": "obibaCountriesUiSelect",
+            "description": "t(initiative.countries.description)"
+          },
+          {
+            "key": "region",
+            "description": "t(initiative.region.description)"
+          },
+          {
+            "key": "setting",
+            "type": "radios",
+            "description": "t(initiative.setting.description)",
+            "titleMap": [
+              {
+                "value": "regional",
+                "name": "t(initiative.setting.regional)"
+              },
+              {
+                "value": "national",
+                "name": "t(initiative.setting.national)"
+              },
+              {
+                "value": "international",
+                "name": "t(initiative.setting.international)"
+              }
+            ]
+          },
+          {
+            "key": "funding",
+            "type": "textarea",
+            "description": "t(initiative.funding.description)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          {
+            "key": "cohortCriteria",
+            "type": "textarea",
+            "description": "t(initiative.cohortCriteria.description)"
+          },
+          {
+            "key": "socioEnvContext",
+            "description": "t(initiative.socioEnvContext.description)",
+            "titleMap": [
+              {
+                "value": "air_pollution",
+                "name": "t(initiative.socioEnvContext.air_pollution)"
+              },
+              {
+                "value": "climate_change",
+                "name": "t(initiative.socioEnvContext.climate_change)"
+              },
+              {
+                "value": "environmental_hazards",
+                "name": "t(initiative.socioEnvContext.environmental_hazards)"
+              },
+              {
+                "value": "short_half_life_chemicals",
+                "name": "t(initiative.socioEnvContext.short_half_life_chemicals)"
+              },
+              {
+                "value": "urbanization",
+                "name": "t(initiative.socioEnvContext.urbanization)"
+              },
+              {
+                "value": "work_related_stress",
+                "name": "t(initiative.socioEnvContext.work_related_stress)"
+              },
+              {
+                "value": "work_life_balance",
+                "name": "t(initiative.socioEnvContext.work_life_balance)"
+              },
+              {
+                "value": "migration",
+                "name": "t(initiative.socioEnvContext.migration)"
+              },
+              {
+                "value": "vnps",
+                "name": "t(initiative.socioEnvContext.vnps)"
+              },
+              {
+                "value": "internet_use",
+                "name": "t(initiative.socioEnvContext.internet_use)"
+              },
+              {
+                "value": "social_media_use",
+                "name": "t(initiative.socioEnvContext.social_media_use)"
+              },
+              {
+                "value": "gaming_online",
+                "name": "t(initiative.socioEnvContext.gaming_online)"
+              },
+              {
+                "value": "gaming_offline",
+                "name": "t(initiative.socioEnvContext.gaming_offline)"
+              },
+              {
+                "value": "other",
+                "name": "t(initiative.socioEnvContext.other)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          },
+          {
+            "key": "socioEnvContextOther",
+            "type": "textarea",
+            "description": "t(initiative.socioEnvContextOther.description)",
+            "condition": "model.socioEnvContext.length>0 && model.socioEnvContext.indexOf('other') != -1"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h4>t(initiative.nbParticipants.title)</h4>"
+          },
+          {
+            "key": "nbParticipants.total",
+            "description": "t(initiative.nbParticipantsTotal.description)"
+          },
+          {
+            "key": "nbParticipants.harmonized",
+            "description": "t(initiative.nbParticipantsHarmonized.description)"
+          },
+          {
+            "type": "help",
+            "helpvalue": "<h4>t(initiative.ageRange.title)</h4>"
+          },
+          {
+            "key": "age.min",
+            "description": "t(initiative.ageMin.description)"
+          },
+          {
+            "key": "age.max",
+            "description": "t(initiative.ageMax.description)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "help",
+    "helpvalue": "<h3>t(initiative.methodology.title)</h3>"
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          {
+            "key": "methodology.harmonizationStrategy",
+            "type": "radios",
+            "required": true,
+            "description": "t(initiative.harmonizationStrategy.description)",
+            "titleMap": [
+              {
+                "value": "ex_ante",
+                "name": "t(initiative.harmonizationStrategy.ex_ante)"
+              },
+              {
+                "value": "ex_post",
+                "name": "t(initiative.harmonizationStrategy.ex_post)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          },
+          {
+            "key": "methodology.harmonizationType",
+            "type": "radios",
+            "required": true,
+            "description": "t(initiative.harmonizationType.description)",
+            "titleMap": [
+              {
+                "value": "prospective",
+                "name": "t(initiative.harmonizationType.prospective)"
+              },
+              {
+                "value": "retrospective",
+                "name": "t(initiative.harmonizationType.retrospective)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h4>t(initiative.nbCohorts.title)</h4>"
+          },
+          {
+            "key": "methodology.nbCohorts.total",
+            "description": "t(initiative.nbCohortsTotal.description)"
+          },
+          {
+            "key": "methodology.nbCohorts.harmonized",
+            "description": "t(initiative.nbCohortsHarmonized.description)"
+          },
+          {
+            "key": "methodology.moreCohortsToBeHarmonized",
+            "type": "radios-inline",
+            "description": "t(initiative.moreCohortsToBeHarmonized.description)",
+            "titleMap": [
+              {
+                "value": true,
+                "name": "t(initiative.yes)"
+              },
+              {
+                "value": false,
+                "name": "t(initiative.no)"
+              }
+            ]
+          },
+          {
+            "key": "methodology.nbHarmonizedVariables",
+            "description": "t(initiative.nbHarmonizedVariables.description)"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "htmlClass": "row",
+    "items": [
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          {
+            "key": "methodology.software",
+            "type": "select",
+            "description": "t(initiative.software.description)",
+            "titleMap": [
+              {
+                "value": "regular",
+                "name": "t(initiative.software.regular)"
+              },
+              {
+                "value": "specific",
+                "name": "t(initiative.software.specific)"
+              },
+              {
+                "value": "other",
+                "name": "t(initiative.software.other)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          },
+          {
+            "key": "methodology.softwareOther",
+            "type": "textarea",
+            "description": "t(initiative.softwareOther.description)",
+            "condition": "model.methodology.software === 'other'"
+          },
+          {
+            "key": "methodology.analyses",
+            "description": "t(initiative.analyses.description)",
+            "titleMap": [
+              {
+                "value": "meta",
+                "name": "t(initiative.analyses.meta)"
+              },
+              {
+                "value": "pooled",
+                "name": "t(initiative.analyses.pooled)"
+              },
+              {
+                "value": "federated",
+                "name": "t(initiative.analyses.federated)"
+              },
+              {
+                "value": "other",
+                "name": "t(initiative.analyses.other)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          },
+          {
+            "key": "methodology.analysesOther",
+            "type": "textarea",
+            "description": "t(initiative.analysesOther.description)",
+            "condition": "model.methodology.analyses.length>0 && model.methodology.analyses.indexOf('other') != -1"
+          },
+          {
+            "key": "methodology.dataProcessingMethods",
+            "type": "select",
+            "description": "t(initiative.dataProcessingMethods.description)",
+            "titleMap": [
+              {
+                "value": "algorithmic",
+                "name": "t(initiative.dataProcessingMethods.algorithmic)"
+              },
+              {
+                "value": "calibration",
+                "name": "t(initiative.dataProcessingMethods.calibration)"
+              },
+              {
+                "value": "standardisation",
+                "name": "t(initiative.dataProcessingMethods.standardisation)"
+              },
+              {
+                "value": "latent_variable_model",
+                "name": "t(initiative.dataProcessingMethods.latent_variable_model)"
+              },
+              {
+                "value": "multiple_imputation",
+                "name": "t(initiative.dataProcessingMethods.multiple_imputation)"
+              },
+              {
+                "value": "others",
+                "name": "t(initiative.dataProcessingMethods.others)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          },
+          {
+            "key": "methodology.dataProcessingMethodsOthers",
+            "type": "textarea",
+            "description": "t(initiative.dataProcessingMethodsOthers.description)",
+            "condition": "model.methodology.dataProcessingMethods === 'others'"
+          }
+        ]
+      },
+      {
+        "type": "section",
+        "htmlClass": "col-xs-6",
+        "items": [
+          {
+            "type": "help",
+            "helpvalue": "<h4>t(initiative.access.title)</h4>"
+          },
+          {
+            "key": "methodology.access.metadata",
+            "type": "select",
+            "description": "t(initiative.metadata.description)",
+            "titleMap": [
+              {
+                "value": "yes",
+                "name": "t(initiative.yes)"
+              },
+              {
+                "value": "under_request",
+                "name": "t(initiative.under_request)"
+              },
+              {
+                "value": "no",
+                "name": "t(initiative.no)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          },
+          {
+            "key": "methodology.access.individualData",
+            "type": "select",
+            "description": "t(initiative.individualData.description)",
+            "titleMap": [
+              {
+                "value": "yes",
+                "name": "t(initiative.yes)"
+              },
+              {
+                "value": "under_request",
+                "name": "t(initiative.under_request)"
+              },
+              {
+                "value": "no",
+                "name": "t(initiative.no)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "methodology.supplementaryInformation",
+    "type": "textarea",
+    "description": "t(initiative.supplementaryInformation.description)"
+  }
+]
