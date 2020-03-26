@@ -113,17 +113,9 @@
           "type": "string",
           "title": "t(initiative.harmonizationStrategy.title)",
           "enum": [
+            "prospective",
             "ex_ante",
             "ex_post",
-            "na"
-          ]
-        },
-        "harmonizationType": {
-          "type": "string",
-          "title": "t(initiative.harmonizationType.title)",
-          "enum": [
-            "prospective",
-            "retrospective",
             "na"
           ]
         },
@@ -149,14 +141,23 @@
           "title": "t(initiative.nbHarmonizedVariables.title)"
         },
         "software": {
-          "type": "string",
           "title": "t(initiative.software.title)",
-          "enum": [
-            "regular",
-            "specific",
-            "other",
-            "na"
-          ]
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "obiba",
+              "datashield",
+              "molgenis",
+              "charmstats",
+              "r",
+              "stata",
+              "sas",
+              "spss",
+              "other",
+              "na"
+            ]
+          }
         },
         "softwareOther": {
           "title": "t(initiative.softwareOther.title)",
@@ -181,17 +182,20 @@
           "type": "string"
         },
         "dataProcessingMethods": {
-          "type": "string",
           "title": "t(initiative.dataProcessingMethods.title)",
-          "enum": [
-            "algorithmic",
-            "calibration",
-            "standardisation",
-            "latent_variable_model",
-            "multiple_imputation",
-            "others",
-            "na"
-          ]
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "algorithmic",
+              "calibration",
+              "standardisation",
+              "latent_variable_model",
+              "multiple_imputation",
+              "others",
+              "na"
+            ]
+          }
         },
         "dataProcessingMethodsOthers": {
           "title": "t(initiative.dataProcessingMethodsOthers.title)",

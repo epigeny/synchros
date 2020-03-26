@@ -234,32 +234,16 @@
             "description": "t(initiative.harmonizationStrategy.description)",
             "titleMap": [
               {
+                "value": "propective",
+                "name": "t(initiative.harmonizationStrategy.prospective)"
+              },
+              {
                 "value": "ex_ante",
                 "name": "t(initiative.harmonizationStrategy.ex_ante)"
               },
               {
                 "value": "ex_post",
                 "name": "t(initiative.harmonizationStrategy.ex_post)"
-              },
-              {
-                "value": "na",
-                "name": "t(initiative.na)"
-              }
-            ]
-          },
-          {
-            "key": "methodology.harmonizationType",
-            "type": "radios",
-            "required": true,
-            "description": "t(initiative.harmonizationType.description)",
-            "titleMap": [
-              {
-                "value": "prospective",
-                "name": "t(initiative.harmonizationType.prospective)"
-              },
-              {
-                "value": "retrospective",
-                "name": "t(initiative.harmonizationType.retrospective)"
               },
               {
                 "value": "na",
@@ -318,16 +302,39 @@
         "items": [
           {
             "key": "methodology.software",
-            "type": "select",
             "description": "t(initiative.software.description)",
             "titleMap": [
               {
-                "value": "regular",
-                "name": "t(initiative.software.regular)"
+                "value": "obiba",
+                "name": "t(initiative.software.obiba)"
               },
               {
-                "value": "specific",
-                "name": "t(initiative.software.specific)"
+                "value": "datashield",
+                "name": "t(initiative.software.datashield)"
+              },
+              {
+                "value": "molgenis",
+                "name": "t(initiative.software.molgenis)"
+              },
+              {
+                "value": "charmstats",
+                "name": "t(initiative.software.charmstats)"
+              },
+              {
+                "value": "r",
+                "name": "t(initiative.software.r)"
+              },
+              {
+                "value": "stata",
+                "name": "t(initiative.software.stata)"
+              },
+              {
+                "value": "sas",
+                "name": "t(initiative.software.sas)"
+              },
+              {
+                "value": "spss",
+                "name": "t(initiative.software.spss)"
               },
               {
                 "value": "other",
@@ -343,7 +350,7 @@
             "key": "methodology.softwareOther",
             "type": "textarea",
             "description": "t(initiative.softwareOther.description)",
-            "condition": "model.methodology.software === 'other'"
+            "condition": "model.methodology.software.length>0 && model.methodology.software.indexOf('other') != -1"
           },
           {
             "key": "methodology.analyses",
@@ -379,7 +386,6 @@
           },
           {
             "key": "methodology.dataProcessingMethods",
-            "type": "select",
             "description": "t(initiative.dataProcessingMethods.description)",
             "titleMap": [
               {
@@ -416,7 +422,7 @@
             "key": "methodology.dataProcessingMethodsOthers",
             "type": "textarea",
             "description": "t(initiative.dataProcessingMethodsOthers.description)",
-            "condition": "model.methodology.dataProcessingMethods === 'others'"
+            "condition": "model.methodology.dataProcessingMethods.length>0 && model.methodology.dataProcessingMethods.indexOf('others') != -1"
           }
         ]
       },

@@ -87,8 +87,9 @@
       },
       "harmonizationStrategy": {
         "title": "Strategy of harmonization",
-        "ex_ante": "ex-ante",
-        "ex_post": "ex-post",
+        "prospective": "Prospective",
+        "ex_ante": "Ex-ante",
+        "ex_post": "Ex-post",
         "description": ""
       },
       "harmonizationType": {
@@ -118,9 +119,15 @@
       },
       "software": {
         "title": "Software",
-        "description": "",
-        "regular": "Regular statistical software",
-        "specific": "Specific software",
+        "description": "Software used for supporting data harmonization and/or integrated analyses.",
+        "obiba": "OBiBa (Opal/Mica)",
+        "datashield": "DataSHIELD",
+        "molgenis": "Molgenis",
+        "charmstats": "CharmStats",
+        "r": "R / Rmarkdown",
+        "stata": "Stata",
+        "sas": "SAS",
+        "spss": "SPSS",
         "other": "Other"
       },
       "softwareOther": {
