@@ -91,19 +91,19 @@
         </#if>
 
         <#if network.model.funding??>
-          <dt class="col-sm-4">
+          <dt class="col-sm-12">
             <@message "initiative.funding.title"/>
           </dt>
-          <dd class="col-sm-8">
+          <dd class="col-sm-12 marked">
             ${network.model.funding}
           </dd>
         </#if>
 
         <#if network.model.cohortCriteria??>
-          <dt class="col-sm-4">
+          <dt class="col-sm-12">
             <@message "initiative.cohortCriteria.title"/>
           </dt>
-          <dd class="col-sm-8">
+          <dd class="col-sm-12 marked">
             ${network.model.cohortCriteria}
           </dd>
         </#if>
@@ -261,7 +261,7 @@
                 <@message text/>
               </#if>
             </dd>
-          </#if
+          </#if>
 
           <#if network.model.methodology.analyses??>
             <dt class="col-sm-6">
@@ -308,10 +308,10 @@
           </#if>
 
           <#if network.model.methodology.supplementaryInformation??>
-            <dt>
+            <dt class="col-sm-12">
               <@message "initiative.supplementaryInformation.title"/>
             </dt>
-            <dd>
+            <dd class="col-sm-12 marked">
               ${network.model.methodology.supplementaryInformation}
             </dd>
           </#if>
