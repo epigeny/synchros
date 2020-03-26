@@ -92,11 +92,12 @@
         "ex_post": "Ex-post",
         "description": ""
       },
-      "harmonizationType": {
-        "title": "Type of harmonization",
-        "prospective": "Prospective",
-        "retrospective": "Retrospective",
-        "description": ""
+      "infrastructure": {
+        "title": "Type of infrastructure",
+        "description": "Type of infrastructure for integrative data analysis",
+        "central": "Data are centrally located",
+        "multiple": "Data are in different locations",
+        "central_and_multiple": "Some centrally, other locally"
       },
       "nbCohorts": {
         "title": "Number of cohorts"
@@ -135,7 +136,7 @@
         "description": ""
       },
       "analyses": {
-        "title": "Analyses",
+        "title": "Integrative data analysis",
         "description": "",
         "meta": "Meta-analyses",
         "pooled": "Pooled analyses",
@@ -148,7 +149,7 @@
       },
       "dataProcessingMethods": {
         "title": "Data processing methods",
-        "description": "",
+        "description": "Methods for processing data in the harmonization",
         "algorithmic": "Algorithmic",
         "calibration": "Calibration",
         "standardisation": "Standardisation",

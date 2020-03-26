@@ -119,6 +119,16 @@
             "na"
           ]
         },
+        "infrastructure": {
+          "type": "string",
+          "title": "t(initiative.infrastructure.title)",
+          "enum": [
+            "central",
+            "multiple",
+            "central_and_multiple",
+            "na"
+          ]
+        },
         "nbCohorts": {
           "type": "object",
           "properties": {

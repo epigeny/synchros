@@ -228,25 +228,90 @@
             </dd>
           </#if>
 
-          <#if network.model.methodology.harmonizationType??>
+          <#if network.model.methodology.dataProcessingMethods??>
             <dt class="col-sm-6">
-              <@message "initiative.harmonizationType.title"/>
+              <@message "initiative.dataProcessingMethods.title"/>
             </dt>
             <dd class="col-sm-6">
-              <#if network.model.methodology.harmonizationType == "na">
+              <#list network.model.methodology.dataProcessingMethods as type>
+                <li>
+                  <#if type == "na">
+                    <@message "initiative.na"/>
+                  <#else>
+                    <#assign text = "initiative.dataProcessingMethods." + type/>
+                    <@message text/>
+                    <#if type == "other" && network.model.methodology.dataProcessingMethodsOthers??>
+                      : ${network.model.methodology.dataProcessingMethodsOthers}
+                    </#if>
+                  </#if>
+                </li>
+              </#list>
+            </dd>
+          </#if>
+
+          <#if network.model.methodology.infrastructure??>
+            <dt class="col-sm-6">
+              <@message "initiative.infrastructure.title"/>
+            </dt>
+            <dd class="col-sm-6">
+              <#if network.model.methodology.infrastructure == "na">
                 <@message "initiative.na"/>
               <#else>
-                <#assign text = "initiative.harmonizationType." + network.model.methodology.harmonizationType/>
+                <#assign text = "initiative.infrastructure." + network.model.methodology.infrastructure/>
                 <@message text/>
               </#if>
+            </dd>
+          </#if
+
+          <#if network.model.methodology.analyses??>
+            <dt class="col-sm-6">
+              <@message "initiative.analyses.title"/>
+            </dt>
+            <dd class="col-sm-6">
+              <ul class="pl-3">
+                <#list network.model.methodology.analyses as type>
+                  <li>
+                    <#if type == "na">
+                      <@message "initiative.na"/>
+                    <#else>
+                      <#assign text = "initiative.analyses." + type/>
+                      <@message text/>
+                      <#if type == "other" && network.model.methodology.analysesOther??>
+                        : ${network.model.methodology.analysesOther}
+                      </#if>
+                    </#if>
+                  </li>
+                </#list>
+              </ul>
+            </dd>
+          </#if>
+
+          <#if network.model.methodology.software??>
+            <dt class="col-sm-6">
+              <@message "initiative.software.title"/>
+            </dt>
+            <dd class="col-sm-6">
+              <#list network.model.methodology.software as type>
+                <li>
+                  <#if type == "na">
+                    <@message "initiative.na"/>
+                  <#else>
+                    <#assign text = "initiative.software." + type/>
+                    <@message text/>
+                    <#if type == "other" && network.model.methodology.softwareOther??>
+                      : ${network.model.methodology.softwareOther}
+                    </#if>
+                  </#if>
+                </li>
+              </#list>
             </dd>
           </#if>
 
           <#if network.model.methodology.supplementaryInformation??>
-            <dt class="col-sm-6">
+            <dt>
               <@message "initiative.supplementaryInformation.title"/>
             </dt>
-            <dd class="col-sm-6">
+            <dd>
               ${network.model.methodology.supplementaryInformation}
             </dd>
           </#if>
@@ -291,74 +356,6 @@
             </#if>
           </dl>
         </#if>
-
-        <p class="border-bottom pb-2">
-          <@message "initiative.analyses.title"/>
-        </p>
-        <dl class="row">
-          <#if network.model.methodology.software??>
-            <dt class="col-sm-6">
-              <@message "initiative.software.title"/>
-            </dt>
-            <dd class="col-sm-6">
-              <#list network.model.methodology.software as type>
-                <li>
-                  <#if type == "na">
-                    <@message "initiative.na"/>
-                  <#else>
-                    <#assign text = "initiative.software." + type/>
-                    <@message text/>
-                    <#if type == "other" && network.model.methodology.softwareOther??>
-                      : ${network.model.methodology.softwareOther}
-                    </#if>
-                  </#if>
-                </li>
-              </#list>
-            </dd>
-          </#if>
-          <#if network.model.methodology.analyses??>
-            <dt class="col-sm-6">
-              <@message "initiative.analyses.title"/>
-            </dt>
-            <dd class="col-sm-6">
-              <ul class="pl-3">
-                <#list network.model.methodology.analyses as type>
-                  <li>
-                    <#if type == "na">
-                      <@message "initiative.na"/>
-                    <#else>
-                      <#assign text = "initiative.analyses." + type/>
-                      <@message text/>
-                      <#if type == "other" && network.model.methodology.analysesOther??>
-                        : ${network.model.methodology.analysesOther}
-                      </#if>
-                    </#if>
-                  </li>
-                </#list>
-              </ul>
-            </dd>
-          </#if>
-          <#if network.model.methodology.dataProcessingMethods??>
-            <dt class="col-sm-6">
-              <@message "initiative.dataProcessingMethods.title"/>
-            </dt>
-            <dd class="col-sm-6">
-              <#list network.model.methodology.dataProcessingMethods as type>
-                <li>
-                  <#if type == "na">
-                    <@message "initiative.na"/>
-                  <#else>
-                    <#assign text = "initiative.dataProcessingMethods." + type/>
-                    <@message text/>
-                    <#if type == "other" && network.model.methodology.dataProcessingMethodsOthers??>
-                      : ${network.model.methodology.dataProcessingMethodsOthers}
-                    </#if>
-                  </#if>
-                </li>
-              </#list>
-            </dd>
-          </#if>
-        </dl>
 
         <#if network.model.methodology.access??>
           <p class="border-bottom pb-2">
