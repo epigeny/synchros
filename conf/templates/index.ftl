@@ -42,13 +42,13 @@
             <p>
             The SYNCHROS repository is part of the European Project SYNCHROS: <strong>SYNergies for Cohorts in Health Integrating the ROle of all Stakeholders</strong>.
             </p>
-            <p>
-              Visit <a href="https://synchros.eu" target="_blank">SYNCHROS</a> main website.
-            </p>
             <blockquote class="quote-secondary">
             SYNCHROS aims to make sustainable recommendations on standards to improve future sample, data collection and data sharing methods and disseminate
             this information so as to contribute to defining an international strategic agenda for better coordination of cohorts globally.
             </blockquote>
+            <p>
+              For more information, visit <a href="https://synchros.eu" target="_blank">SYNCHROS</a> main website.
+            </p>
           </div>
         </div>
 
