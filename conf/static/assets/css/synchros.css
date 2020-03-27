@@ -8,6 +8,16 @@ body {
 	font-color: #ffffff;
 }
 
+.nav-item a {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #333333 !important;
+}
+
+.nav-item a.btn {
+	color: #ffffff !important;
+}
+
 .main-footer {
 	background-color: #292929;
 }
