@@ -1702,11 +1702,6 @@
     "facetPosition": "0"
     "facetExpanded": "false"
   "terms":
-    - "name": "central"
-      "title":
-        "en": "Data are centrally located"
-      "description":
-        "en": ""
     - "name": "obiba"
       "title":
         "en": "OBiBa (Opal/Mica)"
