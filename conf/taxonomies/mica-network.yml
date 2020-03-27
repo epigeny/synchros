@@ -1828,6 +1828,11 @@
         "en": "Others"
       "description":
         "en": ""
+    - "name": "na"
+      "title":
+        "en": "NA"
+      "description":
+        "en": ""
 - "name": "accessMetadata"
   "title":
     "en": "Availability of metadata"
