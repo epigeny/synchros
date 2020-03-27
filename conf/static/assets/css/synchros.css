@@ -1,0 +1,16 @@
+body {
+	background-color: #f4f6f9;
+}
+
+.brand-text {
+	display: inline-block;
+	min-height: 1em;
+	font-color: #ffffff;
+}
+
+.main-footer {
+	background-color: #292929;
+}
+.main-footer a {
+	color: #ffffff;
+}
