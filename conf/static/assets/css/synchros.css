@@ -34,8 +34,12 @@ body {
 	font-weight: bold;
 }
 
-.btn-primary, .nav-link.active, .page-item.active .page-link {
+.btn-primary, .nav-pills .nav-link.active, .page-item.active .page-link {
 	background-color: #2285bc !important;
+}
+
+.card-primary.card-outline-tabs>.card-header a.active {
+	border-top-color: #2285bc;
 }
 
 blockquote {
