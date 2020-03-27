@@ -149,7 +149,7 @@
       },
       "dataProcessingMethods": {
         "title": "Data processing methods",
-        "description": "Methods for processing data in the harmonization",
+        "description": "Methods for processing data in the harmonization.",
         "algorithmic": "Algorithmic",
         "calibration": "Calibration",
         "standardisation": "Standardisation",

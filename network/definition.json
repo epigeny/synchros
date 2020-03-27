@@ -298,15 +298,15 @@
             "description": "t(initiative.infrastructure.description)",
             "titleMap": [
               {
-                "value": "propective",
+                "value": "central",
                 "name": "t(initiative.infrastructure.central)"
               },
               {
-                "value": "ex_ante",
+                "value": "multiple",
                 "name": "t(initiative.infrastructure.multiple)"
               },
               {
-                "value": "ex_post",
+                "value": "central_and_multiple",
                 "name": "t(initiative.infrastructure.central_and_multiple)"
               },
               {
