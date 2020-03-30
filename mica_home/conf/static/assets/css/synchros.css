@@ -1,0 +1,52 @@
+body {
+	background-color: #f4f6f9;
+}
+
+.brand-text {
+	display: inline-block;
+	min-height: 1em;
+	font-color: #ffffff;
+}
+
+.main-header .nav-item a {
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #333333 !important;
+}
+
+.main-header .nav-item a.btn {
+	color: #ffffff !important;
+}
+
+.main-footer {
+	background-color: #292929;
+}
+.main-footer a {
+	color: #ffffff;
+}
+
+.content-header.bg-info {
+	background-color: #2285bc !important;
+	padding: 40px;
+}
+
+.content-header h1 {
+	font-weight: bold;
+}
+
+.btn-primary, .nav-pills .nav-link.active, .page-item.active .page-link {
+	background-color: #2285bc !important;
+}
+
+.card-primary.card-outline-tabs>.card-header a.active {
+	border-top-color: #2285bc;
+}
+
+blockquote {
+	border-left-color: #2285bc;
+}
+
+.card-primary.card-outline {
+	border-top-color: #2285bc !important;
+}
+
