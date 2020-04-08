@@ -13,7 +13,7 @@
     </div>
     <div class="col-sm-12 col-lg-4 text-center">
       <a title="LinkedIn" href="https://www.linkedin.com/in/synchros-linked-a7508a184/" target="_blank" class="pr-2"><i class="fab fa-linkedin"></i></a>
-      <a title="Follow us on twitter" href="https://twitter.com/SynchrosTweets" target="_blank" class="pr-2"><i class="fab fa-twitter-square"></i></a>
+      <a title="Follow us on twitter" href="https://twitter.com/synchros_eu" target="_blank" class="pr-2"><i class="fab fa-twitter-square"></i></a>
       <a href="mailto:info@synchros.eu" class="pr-2">info@synchros.eu</a>
     </div>
     <div class="col-sm-12 col-lg-4">
