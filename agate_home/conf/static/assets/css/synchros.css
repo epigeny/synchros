@@ -18,6 +18,10 @@ body {
 	color: #ffffff !important;
 }
 
+.main-header .nav-item a.btn.btn-outline-primary {
+  color: #007bff !important;
+}
+
 .main-footer {
 	background-color: #292929;
 }
