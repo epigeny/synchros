@@ -22,6 +22,10 @@ body {
   color: #007bff !important;
 }
 
+.main-header .nav-item a.btn.btn-outline-danger {
+  color: #dc3545 !important;
+}
+
 .main-footer {
 	background-color: #292929;
 }
