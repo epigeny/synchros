@@ -15,6 +15,8 @@
           "mobile_data_collection",
           "social_media",
           "geospatial_technology",
+          "smart_sensors",
+          "internet",
           "crowdsourcing_crowseeding",
           "artificial_intelligence",
           "passive_data_collection",
@@ -44,6 +46,7 @@
         "enum": [
           "mobile_phone",
           "smartphone",
+          "smartphone_apps",
           "smartwatch_wearables",
           "tablet_laptop",
           "others"
@@ -81,6 +84,7 @@
         "enum": [
           "global_navigation_satellite_systems",
           "geographical_information_systems",
+          "remote_sensing",
           "internet_mapping",
           "others"
         ]
@@ -90,6 +94,42 @@
       "type": "object",
       "format": "localizedString",
       "title": "t(data-collection-event.other-geospatial-technology)"
+    },
+    "smartSensors": {
+      "type": "array",
+      "title": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.smart_sensors.title)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ingestible_sensors",
+          "biosensors",
+          "motion_sensors",
+          "glucose_monitors",
+          "others"
+        ]
+      }
+    },
+    "otherSmartSensors": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.other-smart-sensors)"
+    },
+    "internet": {
+      "type": "array",
+      "title": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.internet.title)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "web_questionnaires",
+          "forums",
+          "others"
+        ]
+      }
+    },
+    "otherInternet": {
+      "type": "object",
+      "format": "localizedString",
+      "title": "t(data-collection-event.other-internet)"
     },
     "otherDataSources": {
       "type": "object",

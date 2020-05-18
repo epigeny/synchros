@@ -31,6 +31,22 @@
                 <#else>
                   <@message txt/>
                 </#if>
+              <#elseif  item == "smart_sensors" && dce.model.socialMedia??>
+                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term." + dce.model.smartSensors + ".title"/>
+                :
+                <#if dce.model.smartSensors == "others" && dce.model.otherSmartSensors??>
+                  ${dce.model.otherSmartSensors[.lang]}
+                <#else>
+                  <@message txt/>
+                </#if>
+              <#elseif  item == "internet" && dce.model.internet??>
+                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-internet.term." + dce.model.internet + ".title"/>
+                :
+                <#if dce.model.internet == "others" && dce.model.otherInternet??>
+                  ${dce.model.otherInternet[.lang]}
+                <#else>
+                  <@message txt/>
+                </#if>
               <#elseif  item == "geospatial_technology" && dce.model.geospatialTechnology??>
                 <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term." + dce.model.geospatialTechnology + ".title"/>
                 :
@@ -130,4 +146,3 @@
   </div>
   <!-- /.modal -->
 </#macro>
-

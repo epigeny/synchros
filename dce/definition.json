@@ -44,6 +44,14 @@
                 "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.geospatial_technology.title)"
               },
               {
+                "value": "smart_sensors",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.smart_sensors.title)"
+              },
+              {
+                "value": "internet",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.internet.title)"
+              },
+              {
                 "value": "crowdsourcing_crowseeding",
                 "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.crowdsourcing_crowseeding.title)"
               },
@@ -160,6 +168,10 @@
                 "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-mobileDataCollection.term.smartphone.title)"
               },
               {
+                "value": "smartphone_apps",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-mobileDataCollection.term.smartphone_apps.title)"
+              },
+              {
                 "value": "smartwatch_wearables",
                 "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-mobileDataCollection.term.smartwatch_wearables.title)"
               },
@@ -220,6 +232,10 @@
                 "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term.geographical_information_systems.title)"
               },
               {
+                "value": "remote_sensing",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term.remote_sensing.title)"
+              },
+              {
                 "value": "internet_mapping",
                 "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term.internet_mapping.title)"
               },
@@ -234,6 +250,62 @@
             "key": "otherGeospatialTechnology",
             "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term.others.description)",
             "condition": "model.geospatialTechnology.indexOf(\"others\")>=0"
+          },
+          {
+            "key": "smartSensors",
+            "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.smart_sensors.description)",
+            "titleMap": [
+              {
+                "value": "ingestible_sensors",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term.ingestible_sensors.title)"
+              },
+              {
+                "value": "biosensors",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term.biosensors.title)"
+              },
+              {
+                "value": "motion_sensors",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term.motion_sensors.title)"
+              },
+              {
+                "value": "glucose_monitors",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term.glucose_monitors.title)"
+              },
+              {
+                "value": "others",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term.others.title)"
+              }
+            ],
+            "condition": "model.dataSources.indexOf(\"smart_sensors\")>=0"
+          },
+          {
+            "key": "otherSmartSensors",
+            "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term.others.description)",
+            "condition": "model.smartSensors.indexOf(\"others\")>=0"
+          },
+          {
+            "key": "internet",
+            "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.internet.description)",
+            "titleMap": [
+              {
+                "value": "web_questionnaires",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-internet.term.web_questionnaires.title)"
+              },
+              {
+                "value": "forums",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-internet.term.forums.title)"
+              },
+              {
+                "value": "others",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-internet.term.others.title)"
+              }
+            ],
+            "condition": "model.dataSources.indexOf(\"internet\")>=0"
+          },
+          {
+            "key": "otherInternet",
+            "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-internet.term.others.description)",
+            "condition": "model.internet.indexOf(\"others\")>=0"
           },
           {
             "key": "otherDataSources",

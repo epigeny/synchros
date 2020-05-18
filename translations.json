@@ -184,6 +184,8 @@
     "data-collection-event": {
       "other-mobile-data-collection": "Other mobile data collection",
       "other-social-media": "Other social media",
+      "other-smart-sensors": "Other smart sensors",
+      "other-internet": "Other Internet",
       "other-geospatial-technology": "Other geospatial technology"
     }
   }

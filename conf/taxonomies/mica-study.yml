@@ -2027,6 +2027,20 @@
     "description":
       "en": ""
       "fr": ""
+  - "name": "smart_sensors"
+    "title":
+      "en": "Smart sensors"
+      "fr": "Capteurs intelligents"
+    "description":
+      "en": ""
+      "fr": ""
+  - "name": "internet"
+    "title":
+      "en": "Internet"
+      "fr": "Internet"
+    "description":
+      "en": ""
+      "fr": ""
   - "name": "crowdsourcing_crowseeding"
     "title":
       "en": "Crowdsourcing and crowseeding"
@@ -2235,6 +2249,12 @@
       "fr": "Téléphone intelligent"
     "description":
       "en": ""
+  - "name": "smartphone_apps"
+    "title":
+      "en": "Smartphone apps"
+      "fr": "Applications de téléphone intelligent"
+    "description":
+      "en": ""
   - "name": "smartwatch_wearables"
     "title":
       "en": "Smartwatch and wearables"
@@ -2303,14 +2323,92 @@
   "terms":
   - "name": "global_navigation_satellite_systems"
     "title":
-      "en": "Global navigation satellite systems"
-      "fr": "Système de navigation satellite"
+      "en": "Global navigation satellite systems (GNSS) (e.g. GPS, GLONASS, Galileo, etc.)"
+      "fr": "Système de navigation satellite (e.g. GPS, GLONASS, Galileo, etc.)"
     "description":
       "en": ""
   - "name": "geographical_information_systems"
     "title":
-      "en": "Geographical information systems"
-      "fr": "Système d'information géographique"
+      "en": "Geographical information systems (GIS)"
+      "fr": "Système d'information géographique (SIG)"
+    "description":
+      "en": ""
+  - "name": "remote_sensing"
+    "title":
+      "en": "Remote sensing (RS)"
+      "fr": "Capteur à distance"
+    "description":
+      "en": ""
+- "name": "populations-dataCollectionEvents-smartSensors"
+  "title":
+    "en": "Data sources - Smart sensors"
+    "fr": "Source des données - Capteurs intelligents"
+  "description":
+    "en": ""
+  "attributes":
+    "field": "populations.dataCollectionEvents.model.smartSensors"
+    "alias": "populations-dataCollectionEvents-model-smartSensors"
+    "type": "keyword"
+  "repeatable": "true"
+  "terms":
+  - "name": "ingestible_sensors"
+    "title":
+      "en": "Ingestible sensors"
+      "fr": "Capteurs ingérables"
+    "description":
+      "en": ""
+  - "name": "biosensors"
+    "title":
+      "en": "Biosensors"
+      "fr": "Capteurs biologiques"
+    "description":
+      "en": ""
+  - "name": "motion_sensors"
+    "title":
+      "en": "Motion sensors"
+      "fr": "Capteurs de mouvements"
+    "description":
+      "en": ""
+  - "name": "glucose_monitors"
+    "title":
+      "en": "Glucose monitors"
+      "fr": "Capteurs de glucose"
+    "description":
+      "en": ""
+  - "name": "others"
+    "title":
+      "en": "Others"
+      "fr": "Autres"
+    "description":
+      "en": ""
+- "name": "populations-dataCollectionEvents-internet"
+  "title":
+    "en": "Data sources - Internet"
+    "fr": "Source des données - Internet"
+  "description":
+    "en": ""
+  "attributes":
+    "field": "populations.dataCollectionEvents.model.internet"
+    "alias": "populations-dataCollectionEvents-model-internet"
+    "type": "keyword"
+  "repeatable": "true"
+  "terms":
+  - "name": "web_questionnaires"
+    "title":
+      "en": "Web-based questionnaires"
+      "fr": "Questionnaires en ligne"
+    "description":
+      "en": ""
+  - "name": "forums"
+    "title":
+      "en": "Forums"
+      "fr": "Forums"
+    "description":
+      "en": ""
+  - "name": "others"
+    "title":
+      "en": "Others"
+      "fr": "Autres"
     "description":
       "en": ""
   - "name": "internet_mapping"
@@ -2538,4 +2636,3 @@
     "field": "model.harmonizationDesign"
     "alias": "model-harmonizationDesign"
     "localized": "true"
-
