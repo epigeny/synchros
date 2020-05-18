@@ -2339,6 +2339,18 @@
       "fr": "Capteur à distance"
     "description":
       "en": ""
+  - "name": "internet_mapping"
+    "title":
+      "en": "Internet mapping"
+      "fr": "Cartographie Internet"
+    "description":
+      "en": ""
+  - "name": "others"
+    "title":
+      "en": "Others"
+      "fr": "Autres"
+    "description":
+      "en": ""
 - "name": "populations-dataCollectionEvents-smartSensors"
   "title":
     "en": "Data sources - Smart sensors"
@@ -2411,16 +2423,25 @@
       "fr": "Autres"
     "description":
       "en": ""
-  - "name": "internet_mapping"
+- "name": "populations-dataCollectionEvents-crowd"
+  "title":
+    "en": "Data sources - Crowdsourcing and crowdseeding"
+  "description":
+    "en": ""
+  "attributes":
+    "field": "populations.dataCollectionEvents.model.crowd"
+    "alias": "populations-dataCollectionEvents-model-crowd"
+    "type": "keyword"
+  "repeatable": "true"
+  "terms":
+  - "name": "crowdsourcing"
     "title":
-      "en": "Internet mapping"
-      "fr": "Cartographie Internet"
+      "en": "Crowdsourcing"
     "description":
       "en": ""
-  - "name": "others"
+  - "name": "crowseeding"
     "title":
-      "en": "Others"
-      "fr": "Autres"
+      "en": "Crowseeding"
     "description":
       "en": ""
 - "name": "access_data"

@@ -131,6 +131,17 @@
       "format": "localizedString",
       "title": "t(data-collection-event.other-internet)"
     },
+    "crowd": {
+      "type": "array",
+      "title": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.crowdsourcing_crowseeding.title)",
+      "items": {
+        "type": "string",
+        "enum": [
+          "crowdsourcing",
+          "crowseeding"
+        ]
+      }
+    },
     "otherDataSources": {
       "type": "object",
       "format": "localizedString",

@@ -31,6 +31,14 @@
                 <#else>
                   <@message txt/>
                 </#if>
+              <#elseif  item == "geospatial_technology" && dce.model.geospatialTechnology??>
+                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term." + dce.model.geospatialTechnology + ".title"/>
+                :
+                <#if dce.model.geospatialTechnology == "others" && dce.model.otherGeospatialTechnology??>
+                  ${dce.model.otherGeospatialTechnology[.lang]}
+                <#else>
+                  <@message txt/>
+                </#if>
               <#elseif  item == "smart_sensors" && dce.model.socialMedia??>
                 <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term." + dce.model.smartSensors + ".title"/>
                 :
@@ -47,14 +55,10 @@
                 <#else>
                   <@message txt/>
                 </#if>
-              <#elseif  item == "geospatial_technology" && dce.model.geospatialTechnology??>
-                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term." + dce.model.geospatialTechnology + ".title"/>
+              <#elseif  item == "crowdsourcing_crowseeding" && dce.model.crowd??>
+                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-crowd.term." + dce.model.crowd + ".title"/>
                 :
-                <#if dce.model.geospatialTechnology == "others" && dce.model.otherGeospatialTechnology??>
-                  ${dce.model.otherGeospatialTechnology[.lang]}
-                <#else>
-                  <@message txt/>
-                </#if>
+                <@message txt/>
               </#if>
             </li>
           </#list>

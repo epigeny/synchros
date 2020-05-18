@@ -308,6 +308,21 @@
             "condition": "model.internet.indexOf(\"others\")>=0"
           },
           {
+            "key": "crowd",
+            "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.crowdsourcing_crowseeding.description)",
+            "titleMap": [
+              {
+                "value": "crowdsourcing",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-crowd.term.crowdsourcing.title)"
+              },
+              {
+                "value": "crowseeding",
+                "name": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-crowd.term.crowseeding.title)"
+              }
+            ],
+            "condition": "model.dataSources.indexOf(\"crowdsourcing_crowseeding\")>=0"
+          },
+          {
             "key": "otherDataSources",
             "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.term.others.description)",
             "condition": "model.dataSources.indexOf(\"others\")>=0"
