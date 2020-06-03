@@ -15,50 +15,80 @@
               <@message txt/>
               <#if item == "others" && dce.model.otherDataSources??>
                 : ${dce.model.otherDataSources[.lang]}
-              <#elseif  item == "mobile_data_collection" && dce.model.mobileDataCollection??>
-                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-mobileDataCollection.term." + dce.model.mobileDataCollection + ".title"/>
-                :
-                <#if dce.model.mobileDataCollection == "others" && dce.model.otherMobileDataCollection??>
-                  ${dce.model.otherMobileDataCollection[.lang]}
-                <#else>
-                  <@message txt/>
-                </#if>
-              <#elseif  item == "social_media" && dce.model.socialMedia??>
-                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-socialMedia.term." + dce.model.socialMedia + ".title"/>
-                :
-                <#if dce.model.socialMedia == "others" && dce.model.otherSocialMedia??>
-                  ${dce.model.otherSocialMedia[.lang]}
-                <#else>
-                  <@message txt/>
-                </#if>
-              <#elseif  item == "geospatial_technology" && dce.model.geospatialTechnology??>
-                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term." + dce.model.geospatialTechnology + ".title"/>
-                :
-                <#if dce.model.geospatialTechnology == "others" && dce.model.otherGeospatialTechnology??>
-                  ${dce.model.otherGeospatialTechnology[.lang]}
-                <#else>
-                  <@message txt/>
-                </#if>
-              <#elseif  item == "smart_sensors" && dce.model.socialMedia??>
-                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term." + dce.model.smartSensors + ".title"/>
-                :
-                <#if dce.model.smartSensors == "others" && dce.model.otherSmartSensors??>
-                  ${dce.model.otherSmartSensors[.lang]}
-                <#else>
-                  <@message txt/>
-                </#if>
+              <#elseif item == "mobile_data_collection" && dce.model.mobileDataCollection??>
+                <ul class="pl-3">
+                  <#list dce.model.mobileDataCollection as item2>
+                    <li>
+                      <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-mobileDataCollection.term." + item2 + ".title"/>
+                      <#if item2 == "others" && dce.model.otherMobileDataCollection??>
+                        ${dce.model.otherMobileDataCollection[.lang]}
+                      <#else>
+                        <@message txt/>
+                      </#if>
+                    </li>
+                  </#list>
+                </ul>
+              <#elseif item == "social_media" && dce.model.socialMedia??>
+                <ul class="pl-3">
+                  <#list dce.model.socialMedia as item2>
+                    <li>
+                      <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-socialMedia.term." + item2 + ".title"/>
+                      <#if item2 == "others" && dce.model.otherSocialMedia??>
+                        ${dce.model.otherSocialMedia[.lang]}
+                      <#else>
+                        <@message txt/>
+                      </#if>
+                    </li>
+                  </#list>
+                </ul>
+              <#elseif item == "geospatial_technology" && dce.model.geospatialTechnology??>
+                <ul class="pl-3">
+                  <#list dce.model.geospatialTechnology as item2>
+                    <li>
+                      <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-geospatialTechnology.term." + item2 + ".title"/>
+                      <#if item2 == "others" && dce.model.otherGeospatialTechnology??>
+                        ${dce.model.otherGeospatialTechnology[.lang]}
+                      <#else>
+                        <@message txt/>
+                      </#if>
+                    </li>
+                  </#list>
+                </ul>
+              <#elseif  item == "smart_sensors" && dce.model.smartSensors??>
+                <ul class="pl-3">
+                  <#list dce.model.smartSensors as item2>
+                    <li>
+                      <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-smartSensors.term." + item2 + ".title"/>
+                      <#if item2 == "others" && dce.model.otherSmartSensors??>
+                        ${dce.model.otherSmartSensors[.lang]}
+                      <#else>
+                        <@message txt/>
+                      </#if>
+                    </li>
+                  </#list>
+                </ul>
               <#elseif  item == "internet" && dce.model.internet??>
-                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-internet.term." + dce.model.internet + ".title"/>
-                :
-                <#if dce.model.internet == "others" && dce.model.otherInternet??>
-                  ${dce.model.otherInternet[.lang]}
-                <#else>
-                  <@message txt/>
-                </#if>
+                <ul class="pl-3">
+                  <#list dce.model.internet as item2>
+                    <li>
+                      <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-internet.term." + item2 + ".title"/>
+                      <#if item2 == "others" && dce.model.otherInternet??>
+                        ${dce.model.otherInternet[.lang]}
+                      <#else>
+                        <@message txt/>
+                      </#if>
+                    </li>
+                  </#list>
+                </ul>                
               <#elseif  item == "crowdsourcing_crowseeding" && dce.model.crowd??>
-                <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-crowd.term." + dce.model.crowd + ".title"/>
-                :
-                <@message txt/>
+                <ul class="pl-3">
+                  <#list dce.model.crowd as item2>
+                    <li>
+                      <#assign txt = "study_taxonomy.vocabulary.populations-dataCollectionEvents-crowd.term." + item2 + ".title"/>
+                      <@message txt/>
+                    </li>
+                  </#list>
+                </ul>
               </#if>
             </li>
           </#list>
