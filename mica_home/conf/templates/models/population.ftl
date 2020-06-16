@@ -329,7 +329,7 @@
       <dl class="row">
         <#if dce.start??>
           <dt class="col-sm-4">
-            <#if dce.model.publicationDate>
+            <#if dce.model.publicationDate?? && dce.model.publicationDate>
               <@message "data-collection-event.pub-date.title"/>
             <#else>
               <@message "start-date"/>

@@ -192,5 +192,6 @@
       "other-internet": "Other Internet",
       "other-geospatial-technology": "Other geospatial technology"
     }
-  }
+  },
+  "end-date": "End Date"
 }
