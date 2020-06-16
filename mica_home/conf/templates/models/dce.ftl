@@ -79,7 +79,7 @@
                       </#if>
                     </li>
                   </#list>
-                </ul>                
+                </ul>
               <#elseif  item == "crowdsourcing_crowseeding" && dce.model.crowd??>
                 <ul class="pl-3">
                   <#list dce.model.crowd as item2>
@@ -153,7 +153,11 @@
           <dl class="row">
             <#if dce.start??>
               <dt class="col-sm-4">
-                Start date
+                <#if dce.model.publicationDate>
+                  <@message "data-collection-event.pub-date.title"/>
+                <#else>
+                  <@message "start-date"/>
+                </#if>
               </dt>
               <dd class="col-sm-8">
                 <div>${dce.start.yearMonth!""}</div>
@@ -161,7 +165,7 @@
             </#if>
             <#if dce.end??>
               <dt class="col-sm-4">
-                End date
+                <@message "end-date"/>
               </dt>
               <dd class="col-sm-8">
                 <div>${dce.end.yearMonth!""}</div>

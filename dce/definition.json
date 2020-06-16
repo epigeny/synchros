@@ -8,6 +8,10 @@
         "htmlClass": "col-xs-6",
         "items": [
           {
+            "key": "publicationDate",
+            "description": "t(data-collection-event.pub-date.description)"
+          },
+          {
             "key": "dataSources",
             "description": "t(study_taxonomy.vocabulary.populations-dataCollectionEvents-dataSources.description)",
             "titleMap": [

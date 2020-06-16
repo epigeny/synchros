@@ -1,6 +1,10 @@
 {
   "type": "object",
   "properties": {
+    "publicationDate": {
+      "type": "boolean",
+      "title": "t(data-collection-event.pub-date.title)"
+    },
     "dataSources": {
       "type": "array",
       "default": [],

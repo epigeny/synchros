@@ -182,6 +182,10 @@
       "under_request": "Under request"
     },
     "data-collection-event": {
+      "pub-date": {
+        "title": "Paper publication date",
+        "description": "The start date of the data collection event is the paper publication date."
+      },
       "other-mobile-data-collection": "Other mobile data collection",
       "other-social-media": "Other social media",
       "other-smart-sensors": "Other smart sensors",
