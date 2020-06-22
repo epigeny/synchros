@@ -1540,6 +1540,271 @@
       "en": "Zimbabwe"
       "fr": "Zimbabwe"
     "description": {}
+- "name": "populations-selectionCriteria-countriesIsoObs"
+  "title":
+    "en": "Selection criteria - Country of residence"
+    "fr": "Critères de sélection - Pays de résidence"
+  "description":
+    "en": "Participant’s country of residence."
+  "attributes":
+    "field": "populations.model.selectionCriteria.countriesIso"
+    "alias": "populations-model-selectionCriteria-countriesIso"
+    "facet": "true"
+    "type": "keyword"
+    "facetPosition": "0"
+    "facetExpanded": "false"
+  "repeatable": "true"
+  "terms":
+  - "name": "AUT"
+    "title":
+      "en": "Austria"
+      "fr": "Autriche"
+    "description": {}
+  - "name": "AUS"
+    "title":
+      "en": "Australia"
+      "fr": "Australie"
+    "description": {}
+  - "name": "BEL"
+    "title":
+      "en": "Belgium"
+      "fr": "Belgique"
+    "description": {}
+  - "name": "BRA"
+    "title":
+      "en": "Brazil"
+      "fr": "Brésil"
+    "description": {}
+  - "name": "CAN"
+    "title":
+      "en": "Canada"
+      "fr": "Canada"
+    "description": {}
+  - "name": "CHE"
+    "title":
+      "en": "Switzerland"
+      "fr": "Suisse"
+    "description": {}
+  - "name": "CHN"
+    "title":
+      "en": "China"
+      "fr": "Chine"
+    "description": {}
+  - "name": "CUB"
+    "title":
+      "en": "Cuba"
+      "fr": "Cuba"
+    "description": {}
+  - "name": "CZE"
+    "title":
+      "en": "Czech Republic"
+      "fr": "République tchèque"
+    "description": {}
+  - "name": "DEU"
+    "title":
+      "en": "Germany"
+      "fr": "Allemagne"
+    "description": {}
+  - "name": "DNK"
+    "title":
+      "en": "Denmark"
+      "fr": "Danemark"
+    "description": {}
+  - "name": "DOM"
+    "title":
+      "en": "Dominican Republic"
+      "fr": "République dominicaine"
+    "description": {}
+  - "name": "EST"
+    "title":
+      "en": "Estonia"
+      "fr": "Estonie"
+    "description": {}
+  - "name": "ESP"
+    "title":
+      "en": "Spain"
+      "fr": "Espagne"
+    "description": {}
+  - "name": "ETH"
+    "title":
+      "en": "Ethiopia"
+      "fr": "Éthiopie"
+    "description": {}
+  - "name": "FIN"
+    "title":
+      "en": "Finland"
+      "fr": "Finlande"
+    "description": {}
+  - "name": "FRA"
+    "title":
+      "en": "France"
+      "fr": "France"
+    "description": {}
+  - "name": "GBR"
+    "title":
+      "en": "United Kingdom"
+      "fr": "Royaume-Uni"
+    "description": {}
+  - "name": "GHA"
+    "title":
+      "en": "Ghana"
+      "fr": "Ghana"
+    "description": {}
+  - "name": "GRC"
+    "title":
+      "en": "Greece"
+      "fr": "Grèce"
+    "description": {}
+  - "name": "HRV"
+    "title":
+      "en": "Croatia"
+      "fr": "Croatie"
+    "description": {}
+  - "name": "HUN"
+    "title":
+      "en": "Hungary"
+      "fr": "Hongrie"
+    "description": {}
+  - "name": "IRL"
+    "title":
+      "en": "Ireland"
+      "fr": "Irlande"
+    "description": {}
+  - "name": "ISR"
+    "title":
+      "en": "Israel"
+      "fr": "Israël"
+    "description": {}
+  - "name": "IND"
+    "title":
+      "en": "India"
+      "fr": "Inde"
+    "description": {}
+  - "name": "ITA"
+    "title":
+      "en": "Italy"
+      "fr": "Italie"
+    "description": {}
+  - "name": "JPN"
+    "title":
+      "en": "Japan"
+      "fr": "Japon"
+    "description": {}
+  - "name": "KEN"
+    "title":
+      "en": "Kenya"
+      "fr": "Kenya"
+    "description": {}
+  - "name": "PRK"
+    "title":
+      "en": "North Korea"
+      "fr": "Corée du Nord"
+    "description": {}
+  - "name": "KOR"
+    "title":
+      "en": "South Korea"
+      "fr": "Corée du Sud"
+    "description": {}
+  - "name": "LTU"
+    "title":
+      "en": "Lithuania"
+      "fr": "Lituanie"
+    "description": {}
+  - "name": "LUX"
+    "title":
+      "en": "Luxembourg"
+      "fr": "Luxembourg"
+    "description": {}
+  - "name": "MEX"
+    "title":
+      "en": "Mexico"
+      "fr": "Mexique"
+    "description": {}
+  - "name": "NGA"
+    "title":
+      "en": "Nigeria"
+      "fr": "Nigeria"
+    "description": {}
+  - "name": "NLD"
+    "title":
+      "en": "Netherlands"
+      "fr": "Pays-Bas"
+    "description": {}
+  - "name": "NOR"
+    "title":
+      "en": "Norway"
+      "fr": "Norvège"
+    "description": {}
+  - "name": "NZL"
+    "title":
+      "en": "New Zealand"
+      "fr": "Nouvelle-Zélande"
+    "description": {}
+  - "name": "PER"
+    "title":
+      "en": "Peru"
+      "fr": "Pérou"
+    "description": {}
+  - "name": "POL"
+    "title":
+      "en": "Poland"
+      "fr": "Pologne"
+    "description": {}
+  - "name": "PRI"
+    "title":
+      "en": "Puerto Rico"
+      "fr": "Porto Rico"
+    "description": {}
+  - "name": "PRT"
+    "title":
+      "en": "Portugal"
+      "fr": "Portugal"
+    "description": {}
+  - "name": "RUS"
+    "title":
+      "en": "Russian"
+      "fr": "Russie"
+    "description": {}
+  - "name": "SAU"
+    "title":
+      "en": "Saudi Arabia"
+      "fr": "Arabie saoudite"
+    "description": {}
+  - "name": "SWE"
+    "title":
+      "en": "Sweden"
+      "fr": "Suède"
+    "description": {}
+  - "name": "SLE"
+    "title":
+      "en": "Sierra Leone"
+      "fr": "Sierra Leone"
+    "description": {}
+  - "name": "TZA"
+    "title":
+      "en": "Tanzania"
+      "fr": "Tanzanie"
+    "description": {}
+  - "name": "UGA"
+    "title":
+      "en": "Uganda"
+      "fr": "Ouganda"
+    "description": {}
+  - "name": "USA"
+    "title":
+      "en": "United States of America"
+      "fr": "États-Unis"
+    "description": {}
+  - "name": "VEN"
+    "title":
+      "en": "Venezuela"
+      "fr": "Venezuela"
+    "description": {}
+  - "name": "ZAF"
+    "title":
+      "en": "South Africa"
+      "fr": "Afrique du Sud"
+    "description": {}
 - "name": "populations-id"
   "title":
     "en": "Population ID"

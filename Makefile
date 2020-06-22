@@ -28,3 +28,6 @@ build:
 reset-taxo:
 	mica rest -u $(username) -p $(password) -mk https://repository.synchros.eu/ -m DELETE /config/$(target)/taxonomy
 	mica rest -u $(username) -p $(password) -mk https://repository.synchros.eu/ -m PUT /taxonomies/_index
+
+countries:
+	mica rest -u $(username) -p $(password) -mk https://repository.synchros.eu/  -m GET "/studies/_rql?query=locale(en),network(limit(0,20),sort(acronym)),study(in(Mica_study.className,Study),aggregate(Mica_study.populations-selectionCriteria-countriesIso)),facet()" -j
