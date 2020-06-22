@@ -290,6 +290,7 @@
     "field": "populations.model.selectionCriteria.countriesIso"
     "alias": "populations-model-selectionCriteria-countriesIso"
     "facet": "true"
+    "hidden": "true"
     "type": "keyword"
     "facetPosition": "0"
     "facetExpanded": "false"
