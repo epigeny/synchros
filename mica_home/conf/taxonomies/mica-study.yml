@@ -1548,7 +1548,7 @@
     "en": "Participant’s country of residence."
   "attributes":
     "field": "populations.model.selectionCriteria.countriesIso"
-    "alias": "populations-model-selectionCriteria-countriesIso"
+    "alias": "populations-model-selectionCriteria-countriesIsoObs"
     "facet": "true"
     "type": "keyword"
     "facetPosition": "0"
