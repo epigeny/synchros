@@ -1556,15 +1556,15 @@
     "facetExpanded": "false"
   "repeatable": "true"
   "terms":
-  - "name": "AUT"
-    "title":
-      "en": "Austria"
-      "fr": "Autriche"
-    "description": {}
   - "name": "AUS"
     "title":
       "en": "Australia"
       "fr": "Australie"
+    "description": {}
+  - "name": "AUT"
+    "title":
+      "en": "Austria"
+      "fr": "Autriche"
     "description": {}
   - "name": "BEL"
     "title":
@@ -1581,15 +1581,15 @@
       "en": "Canada"
       "fr": "Canada"
     "description": {}
-  - "name": "CHE"
-    "title":
-      "en": "Switzerland"
-      "fr": "Suisse"
-    "description": {}
   - "name": "CHN"
     "title":
       "en": "China"
       "fr": "Chine"
+    "description": {}
+  - "name": "HRV"
+    "title":
+      "en": "Croatia"
+      "fr": "Croatie"
     "description": {}
   - "name": "CUB"
     "title":
@@ -1621,11 +1621,6 @@
       "en": "Estonia"
       "fr": "Estonie"
     "description": {}
-  - "name": "ESP"
-    "title":
-      "en": "Spain"
-      "fr": "Espagne"
-    "description": {}
   - "name": "ETH"
     "title":
       "en": "Ethiopia"
@@ -1641,11 +1636,6 @@
       "en": "France"
       "fr": "France"
     "description": {}
-  - "name": "GBR"
-    "title":
-      "en": "United Kingdom"
-      "fr": "Royaume-Uni"
-    "description": {}
   - "name": "GHA"
     "title":
       "en": "Ghana"
@@ -1655,11 +1645,6 @@
     "title":
       "en": "Greece"
       "fr": "Grèce"
-    "description": {}
-  - "name": "HRV"
-    "title":
-      "en": "Croatia"
-      "fr": "Croatie"
     "description": {}
   - "name": "HUN"
     "title":
@@ -1731,15 +1716,15 @@
       "en": "Netherlands"
       "fr": "Pays-Bas"
     "description": {}
-  - "name": "NOR"
-    "title":
-      "en": "Norway"
-      "fr": "Norvège"
-    "description": {}
   - "name": "NZL"
     "title":
       "en": "New Zealand"
       "fr": "Nouvelle-Zélande"
+    "description": {}
+  - "name": "NOR"
+    "title":
+      "en": "Norway"
+      "fr": "Norvège"
     "description": {}
   - "name": "PER"
     "title":
@@ -1751,15 +1736,15 @@
       "en": "Poland"
       "fr": "Pologne"
     "description": {}
-  - "name": "PRI"
-    "title":
-      "en": "Puerto Rico"
-      "fr": "Porto Rico"
-    "description": {}
   - "name": "PRT"
     "title":
       "en": "Portugal"
       "fr": "Portugal"
+    "description": {}
+  - "name": "PRI"
+    "title":
+      "en": "Puerto Rico"
+      "fr": "Porto Rico"
     "description": {}
   - "name": "RUS"
     "title":
@@ -1771,15 +1756,35 @@
       "en": "Saudi Arabia"
       "fr": "Arabie saoudite"
     "description": {}
+  - "name": "SLE"
+    "title":
+      "en": "Sierra Leone"
+      "fr": "Sierra Leone"
+    "description": {}
+  - "name": "SVN"
+    "title":
+      "en": "Slovenia"
+      "fr": "Slovénie"
+    "description": {}
+  - "name": "ZAF"
+    "title":
+      "en": "South Africa"
+      "fr": "Afrique du Sud"
+    "description": {}
+  - "name": "ESP"
+    "title":
+      "en": "Spain"
+      "fr": "Espagne"
+    "description": {}
   - "name": "SWE"
     "title":
       "en": "Sweden"
       "fr": "Suède"
     "description": {}
-  - "name": "SLE"
+  - "name": "CHE"
     "title":
-      "en": "Sierra Leone"
-      "fr": "Sierra Leone"
+      "en": "Switzerland"
+      "fr": "Suisse"
     "description": {}
   - "name": "TZA"
     "title":
@@ -1791,6 +1796,11 @@
       "en": "Uganda"
       "fr": "Ouganda"
     "description": {}
+  - "name": "GBR"
+    "title":
+      "en": "United Kingdom"
+      "fr": "Royaume-Uni"
+    "description": {}
   - "name": "USA"
     "title":
       "en": "United States of America"
@@ -1800,11 +1810,6 @@
     "title":
       "en": "Venezuela"
       "fr": "Venezuela"
-    "description": {}
-  - "name": "ZAF"
-    "title":
-      "en": "South Africa"
-      "fr": "Afrique du Sud"
     "description": {}
 - "name": "populations-id"
   "title":
