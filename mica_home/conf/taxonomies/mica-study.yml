@@ -896,11 +896,6 @@
       "en": "Saint Kitts and Nevis"
       "fr": "Saint-Christophe-et-Niévès"
     "description": {}
-  - "name": "PRK"
-    "title":
-      "en": "North Korea"
-      "fr": "Corée du Nord"
-    "description": {}
   - "name": "KOR"
     "title":
       "en": "South Korea"
@@ -1248,8 +1243,8 @@
     "description": {}
   - "name": "RUS"
     "title":
-      "en": "Russian"
-      "fr": "Russie"
+      "en": "Russian Federation"
+      "fr": "Fédération de Russie"
     "description": {}
   - "name": "RWA"
     "title":
@@ -1653,10 +1648,10 @@
     "description": {}
 - "name": "populations-selectionCriteria-countriesEur"
   "title":
-    "en": "Selection criteria - Country of residence (Europa)"
+    "en": "Selection criteria - Country of residence (Europe)"
     "fr": "Critères de sélection - Pays de résidence (Europe)"
   "description":
-    "en": "Participant’s country of residence (Europa)."
+    "en": "Participant’s country of residence (Europe)."
   "attributes":
     "field": "populations.model.selectionCriteria.countriesIso"
     "alias": "populations-model-selectionCriteria-countriesEur"
