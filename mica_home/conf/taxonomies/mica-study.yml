@@ -896,6 +896,11 @@
       "en": "Saint Kitts and Nevis"
       "fr": "Saint-Christophe-et-Niévès"
     "description": {}
+  - "name": "PRK"
+    "title":
+      "en": "North Korea"
+      "fr": "Corée du Nord"
+    "description": {}
   - "name": "KOR"
     "title":
       "en": "South Korea"
@@ -1625,11 +1630,6 @@
     "title":
       "en": "Japan"
       "fr": "Japon"
-    "description": {}
-  - "name": "PRK"
-    "title":
-      "en": "North Korea"
-      "fr": "Corée du Nord"
     "description": {}
   - "name": "KOR"
     "title":
