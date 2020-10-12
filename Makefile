@@ -1,3 +1,7 @@
+SYNCHROS_HOME=/home/syncuser/projects/synchros
+BACKUP_DIR=${SYNCHROS_HOME}/backups
+DATE=`date +"%Y%m%d"`
+
 help:
 	@echo "make up"
 
@@ -31,3 +35,20 @@ reset-taxo:
 
 countries:
 	mica rest -u $(username) -p $(password) -mk https://repository.synchros.eu/  -m GET "/studies/_rql?query=locale(en),network(limit(0,20),sort(acronym)),study(in(Mica_study.className,Study),aggregate(Mica_study.populations-selectionCriteria-countriesIso)),facet()" -j
+
+backups: agate-backup mica-backup mongo-backup
+
+prepare-backup:
+	rm -rf ${BACKUP_DIR}/${DATE}
+	mkdir -p ${BACKUP_DIR}/${DATE}
+
+agate-backup: prepare-backup
+	cp -r ${SYNCHROS_HOME}/agate_home ${BACKUP_DIR}/${DATE}/agate_home
+
+mica-backup: prepare-backup
+	cp -r ${SYNCHROS_HOME}/mica_home ${BACKUP_DIR}/${DATE}/mica_home
+
+mongo-backup: prepare-backup
+	rm -rf /tmp/mongodump && \
+	docker run -it --rm --network synchros_default -v /tmp/mongodump:/tmp/dump mongo:4.2 bash -c 'mongodump -v --host mongo:27017 --out=/tmp/dump' && \
+	mv /tmp/mongodump ${BACKUP_DIR}/${DATE}/mongo
