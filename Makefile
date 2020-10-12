@@ -43,10 +43,15 @@ prepare-backup:
 	mkdir -p ${BACKUP_DIR}/${DATE}
 
 agate-backup: prepare-backup
-	cp -r ${SYNCHROS_HOME}/agate_home ${BACKUP_DIR}/${DATE}/agate_home
+	mkdir -p ${BACKUP_DIR}/${DATE}/agate_home
+	cp -r ${SYNCHROS_HOME}/agate_home/conf ${BACKUP_DIR}/${DATE}/agate_home/conf
+	cp -r ${SYNCHROS_HOME}/agate_home/data ${BACKUP_DIR}/${DATE}/agate_home/data
 
 mica-backup: prepare-backup
-	cp -r ${SYNCHROS_HOME}/mica_home ${BACKUP_DIR}/${DATE}/mica_home
+	mkdir -p ${BACKUP_DIR}/${DATE}/mica_home
+	cp -r ${SYNCHROS_HOME}/mica_home/conf ${BACKUP_DIR}/${DATE}/mica_home/conf
+	cp -r ${SYNCHROS_HOME}/mica_home/data ${BACKUP_DIR}/${DATE}/mica_home/data
+	cp -r ${SYNCHROS_HOME}/mica_home/plugins ${BACKUP_DIR}/${DATE}/mica_home/plugins
 
 mongo-backup: prepare-backup
 	rm -rf /tmp/mongodump && \
