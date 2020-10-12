@@ -52,3 +52,15 @@ mongo-backup: prepare-backup
 	rm -rf /tmp/mongodump && \
 	docker run -it --rm --network synchros_default -v /tmp/mongodump:/tmp/dump mongo:4.2 bash -c 'mongodump -v --host mongo:27017 --out=/tmp/dump' && \
 	mv /tmp/mongodump ${BACKUP_DIR}/${DATE}/mongo
+
+
+restore: agate-restore mica-restore mongo-restore
+
+agate-restore:
+	cp -r $(backup)/agate_home ${SYNCHROS_HOME}/agate_home
+
+mica_restore:
+	cp -r $(backup)/mica_home ${SYNCHROS_HOME}/mica_home
+
+mongo-restore:
+	docker run -it --rm --network synchros_default -v $(backup)/mongo:/tmp/dump mongo bash -c 'mongorestore -v --host mongo:27017 /tmp/dump'
