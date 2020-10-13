@@ -1,4 +1,7 @@
-<!-- DCE macros -->
+<!-- Default model macros -->
+<#include "../libs/dce.ftl">
+
+<!-- Custom model macros, to redefine some default model macros -->
 
 <!-- DCE model -->
 <#macro dceModel dce>
@@ -172,7 +175,10 @@
               </dd>
             </#if>
           </dl>
-            <@dceModel dce=dce/>
+          <@dceModel dce=dce/>
+          <#if showStudyDCEFiles>
+            <@dceFilesBrowser id=id/>
+          </#if>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>

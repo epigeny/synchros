@@ -8,9 +8,6 @@ help:
 up:
 	sudo docker-compose -f docker-compose.yml up -d
 
-down:
-	sudo docker-compose -f docker-compose.yml down
-
 stop:
 	sudo docker-compose -f docker-compose.yml stop
 

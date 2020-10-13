@@ -120,13 +120,7 @@
 <!-- ./wrapper -->
 
 <#include "libs/scripts.ftl">
-
-<script>
-  micajs.stats('studies', {}, function(stats) {
-    $('#network-hits').text(new Intl.NumberFormat().format(stats.networkResultDto.totalHits));
-    $('#study-hits').text(new Intl.NumberFormat().format(stats.studyResultDto.totalHits));
-  });
-</script>
+<#include "libs/index-scripts.ftl">
 
 </body>
 </html>
