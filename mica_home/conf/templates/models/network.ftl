@@ -111,6 +111,29 @@
           </dd>
         </#if>
 
+        <#if network.model.healthTopic??>
+          <dt class="col-sm-4">
+            <@message "initiative.healthTopic.title"/>
+          </dt>
+          <dd class="col-sm-8">
+            <ul class="pl-3">
+              <#list network.model.healthTopic as type>
+                <li>
+                  <#if type == "na">
+                    <@message "initiative.na"/>
+                  <#else>
+                    <#assign text = "initiative.healthTopic." + type/>
+                    <@message text/>
+                    <#if type == "other" && network.model.healthTopicOther??>
+                      : ${network.model.healthTopicOther}
+                    </#if>
+                  </#if>
+                </li>
+              </#list>
+            </ul>
+          </dd>
+        </#if>
+
         <#if network.model.socioEnvContext??>
           <dt class="col-sm-4">
             <@message "initiative.socioEnvContext.title"/>
@@ -411,4 +434,3 @@
     <i class="fas fa-times"></i>
   </#if>
 </#macro>
-

@@ -5,6 +5,13 @@
         "title": "Data entry date",
         "description": "Date at which information was collected"
       },
+      "informationStatus": {
+        "title": "Information status",
+        "complete": "Very complete",
+        "missing": "Some important information is missing",
+        "empty": "Empty",
+        "description": "Completeness of the information presented in the network or initiative."
+      },
       "yearCreated": {
         "title": "Year created"
       },
@@ -36,6 +43,39 @@
       },
       "cohortCriteria": {
         "title": "Criteria of cohort's to be included",
+        "description": ""
+      },
+      "healthTopic": {
+        "title": "Health topic",
+        "description": "Main health topic of the network or initiative.",
+        "ageing": "Ageing",
+        "mental_health": "Mental health",
+        "environmental_health": "Environmental health",
+        "occupational_health": "Occupational health",
+        "public_health": "Public health",
+        "social_environment": "Social environment",
+        "nutritional_health": "Nutritional health",
+        "reproductive_health": "Reproductive health",
+        "birth_infancy_childhood_health": "Birth, infancy and childhood health",
+        "addictive_behaviours": "Addictive behaviours",
+        "cancer": "Cancer",
+        "cardiovascular_diseases": "Cardiovascular diseases",
+        "respiratory_diseases": "Respiratory diseases",
+        "neurological_diseases": "Neurological diseases",
+        "musculoskeletal_diseases": "Musculoskeletal diseases",
+        "chronic_diseases": "Chronic diseases",
+        "non_communicable_diseases": "Non-communicable diseases",
+        "communicable_diseases": "Communicable diseases",
+        "general_epidemiology": "General epidemiology",
+        "biomedicine": "Biomedicine",
+        "genetics": "Genetics",
+        "genomics": "Genomics",
+        "other_omics": "Other -omics",
+        "medical_imaging": "Medical imaging",
+        "other": "Other"
+      },
+      "healthTopicOther": {
+        "title": "Other health topic",
         "description": ""
       },
       "socioEnvContext": {

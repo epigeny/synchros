@@ -10,6 +10,15 @@
       "type": "string",
       "format": "datepicker"
     },
+    "informationStatus": {
+      "type": "string",
+      "title": "t(initiative.informationStatus.title)",
+      "enum": [
+        "complete",
+        "missing",
+        "empty"
+      ]
+    },
     "yearCreated": {
       "title": "t(initiative.yearCreated.title)",
       "type": "number"
@@ -50,6 +59,45 @@
     },
     "cohortCriteria": {
       "title": "t(initiative.cohortCriteria.title)",
+      "type": "string"
+    },
+    "healthTopic": {
+      "title": "t(initiative.healthTopic.title)",
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "ageing",
+          "mental_health",
+          "environmental_health",
+          "occupational_health",
+          "public_health",
+          "social_environment",
+          "nutritional_health",
+          "reproductive_health",
+          "birth_infancy_childhood_health",
+          "addictive_behaviours",
+          "cancer",
+          "cardiovascular_diseases",
+          "respiratory_diseases",
+          "neurological_diseases",
+          "musculoskeletal_diseases",
+          "chronic_diseases",
+          "non_communicable_diseases",
+          "communicable_diseases",
+          "general_epidemiology",
+          "biomedicine",
+          "genetics",
+          "genomics",
+          "other_omics",
+          "medical_imaging",
+          "other",
+          "na"
+        ]
+      }
+    },
+    "healthTopicOther": {
+      "title": "t(initiative.healthTopicOther.title)",
       "type": "string"
     },
     "socioEnvContext": {

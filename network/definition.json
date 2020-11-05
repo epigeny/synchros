@@ -33,6 +33,25 @@
             "validationMessage": "t(date-error)"
           },
           {
+            "key": "informationStatus",
+            "type": "radios",
+            "description": "t(initiative.informationStatus.description)",
+            "titleMap": [
+              {
+                "value": "complete",
+                "name": "t(initiative.informationStatus.complete)"
+              },
+              {
+                "value": "missing",
+                "name": "t(initiative.informationStatus.missing)"
+              },
+              {
+                "value": "empty",
+                "name": "t(initiative.informationStatus.empty)"
+              }
+            ]
+          },
+          {
             "key": "yearCreated"
           },
           {
@@ -108,6 +127,122 @@
             "key": "cohortCriteria",
             "type": "textarea",
             "description": "t(initiative.cohortCriteria.description)"
+          },
+          {
+            "key": "healthTopic",
+            "description": "t(initiative.healthTopic.description)",
+            "titleMap": [
+              {
+                "value": "ageing",
+                "name": "t(initiative.healthTopic.ageing)"
+              },
+              {
+                "value": "mental_health",
+                "name": "t(initiative.healthTopic.mental_health)"
+              },
+              {
+                "value": "environmental_health",
+                "name": "t(initiative.healthTopic.environmental_health)"
+              },
+              {
+                "value": "occupational_health",
+                "name": "t(initiative.healthTopic.occupational_health)"
+              },
+              {
+                "value": "public_health",
+                "name": "t(initiative.healthTopic.public_health)"
+              },
+              {
+                "value": "social_environment",
+                "name": "t(initiative.healthTopic.social_environment)"
+              },
+              {
+                "value": "nutritional_health",
+                "name": "t(initiative.healthTopic.nutritional_health)"
+              },
+              {
+                "value": "reproductive_health",
+                "name": "t(initiative.healthTopic.reproductive_health)"
+              },
+              {
+                "value": "birth_infancy_childhood_health",
+                "name": "t(initiative.healthTopic.birth_infancy_childhood_health)"
+              },
+              {
+                "value": "addictive_behaviours",
+                "name": "t(initiative.healthTopic.addictive_behaviours)"
+              },
+              {
+                "value": "cancer",
+                "name": "t(initiative.healthTopic.cancer)"
+              },
+              {
+                "value": "cardiovascular_diseases",
+                "name": "t(initiative.healthTopic.cardiovascular_diseases)"
+              },
+              {
+                "value": "respiratory_diseases",
+                "name": "t(initiative.healthTopic.respiratory_diseases)"
+              },
+              {
+                "value": "neurological_diseases",
+                "name": "t(initiative.healthTopic.neurological_diseases)"
+              },
+              {
+                "value": "musculoskeletal_diseases",
+                "name": "t(initiative.healthTopic.musculoskeletal_diseases)"
+              },
+              {
+                "value": "chronic_diseases",
+                "name": "t(initiative.healthTopic.chronic_diseases)"
+              },
+              {
+                "value": "non_communicable_diseases",
+                "name": "t(initiative.healthTopic.non_communicable_diseases)"
+              },
+              {
+                "value": "communicable_diseases",
+                "name": "t(initiative.healthTopic.communicable_diseases)"
+              },
+              {
+                "value": "general_epidemiology",
+                "name": "t(initiative.healthTopic.general_epidemiology)"
+              },
+              {
+                "value": "biomedicine",
+                "name": "t(initiative.healthTopic.biomedicine)"
+              },
+              {
+                "value": "genetics",
+                "name": "t(initiative.healthTopic.genetics)"
+              },
+              {
+                "value": "genomics",
+                "name": "t(initiative.healthTopic.genomics)"
+              },
+              {
+                "value": "other_omics",
+                "name": "t(initiative.healthTopic.other_omics)"
+              },
+              {
+                "value": "medical_imaging",
+                "name": "t(initiative.healthTopic.medical_imaging)"
+              },
+              {
+                "value": "other",
+                "name": "t(initiative.healthTopic.other)"
+              },
+              {
+                "value": "na",
+                "name": "t(initiative.na)"
+              }
+            ]
+          },
+          {
+            "key": "healthTopicOther",
+            "type": "textarea",
+            "description": "t(initiative.healthTopicOther.description)",
+            "condition": "model.healthTopic.length>0 && model.healthTopic.indexOf('other') != -1"
           },
           {
             "key": "socioEnvContext",
