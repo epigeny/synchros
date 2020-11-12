@@ -113,17 +113,23 @@
               </div>
               <#if network.model.informationStatus??>
                 <div class="card-footer">
-                  <@message "initiative.informationStatus.title"/>:
-                  <#if network.model.informationStatus == "complete">
-                    <i class="fas fa-circle text-success"></i>
-                    <small>(<@message "initiative.informationStatus.complete"/>)</small>
-                  <#elseif network.model.informationStatus == "missing">
-                    <i class="fas fa-circle text-warning"></i>
-                    <small>(<@message "initiative.informationStatus.missing"/>)</small>
-                  <#else>
-                    <i class="far fa-circle"></i>
-                    <small>(<@message "initiative.informationStatus.empty"/>)</small>
-                  </#if>
+                  <dl class="row mb-0">
+                    <dt class="col-sm-2">
+                      <@message "initiative.informationStatus.title"/>
+                    </dt>
+                    <dd class="col-sm-10">
+                      <#if network.model.informationStatus == "complete">
+                        <i class="fas fa-circle text-success"></i>
+                        <small><@message "initiative.informationStatus.complete"/></small>
+                      <#elseif network.model.informationStatus == "missing">
+                        <i class="fas fa-circle text-warning"></i>
+                        <small><@message "initiative.informationStatus.missing"/></small>
+                      <#else>
+                        <i class="far fa-circle"></i>
+                        <small><@message "initiative.informationStatus.empty"/></small>
+                      </#if>
+                    </dd>
+                  </dl>
                 </div>
               </#if>
             </div>
