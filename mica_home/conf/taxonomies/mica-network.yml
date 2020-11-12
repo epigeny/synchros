@@ -1456,6 +1456,34 @@
     "alias": "model-cohortCriteria"
     "static": "true"
     "type": "string"
+- "name": "informationStatus"
+  "title":
+    "en": "Information status"
+  "description":
+    "en": ""
+  "attributes":
+    "field": "model.informationStatus"
+    "alias": "model-informationStatus"
+    "facet": "true"
+    "type": "keyword"
+    "facetPosition": "0"
+    "facetExpanded": "false"
+  "terms":
+    - "name": "complete"
+      "title":
+        "en": "Very complete"
+      "description":
+        "en": ""
+    - "name": "missing"
+      "title":
+        "en": "Some important information is missing"
+      "description":
+        "en": ""
+    - "name": "empty"
+      "title":
+        "en": "Empty"
+      "description":
+        "en": ""
 - "name": "socioEnvContext"
   "title":
     "en": "Socio-environmental context"
