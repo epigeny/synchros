@@ -1,3 +1,5 @@
 pssjd.vpn.txt
 docker-compose.yml
 data
+*.iml
+.idea
