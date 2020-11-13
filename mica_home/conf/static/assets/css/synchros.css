@@ -60,3 +60,8 @@ blockquote {
     text-decoration: none !important;
     background-color: transparent;
 }
+
+.dropdown-menu {
+	z-index: 1040;
+}
+
