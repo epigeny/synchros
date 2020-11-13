@@ -1498,77 +1498,77 @@
     "facetExpanded": "false"
   "terms":
     - "name": "ageing"
-        "title":
-          "en": "Ageing",
+      "title":
+        "en": "Ageing"
     - "name": "mental_health"
-        "title":
-          "en": "Mental health",
+      "title":
+        "en": "Mental health"
     - "name": "environmental_health"
-        "title":
-          "en": "Environmental health",
+      "title":
+        "en": "Environmental health"
     - "name": "occupational_health"
-        "title":
-          "en": "Occupational health",
+      "title":
+        "en": "Occupational health"
     - "name": "public_health"
-        "title":
-          "en": "Public health",
+      "title":
+        "en": "Public health"
     - "name": "social_environment"
-        "title":
-          "en": "Social environment",
+      "title":
+        "en": "Social environment"
     - "name": "nutritional_health"
-        "title":
-          "en": "Nutritional health",
+      "title":
+        "en": "Nutritional health"
     - "name": "reproductive_health"
-        "title":
-          "en": "Reproductive health",
+      "title":
+        "en": "Reproductive health"
     - "name": "birth_infancy_childhood_health"
-        "title":
-          "en": "Birth, infancy and childhood health",
+      "title":
+        "en": "Birth, infancy and childhood health"
     - "name": "addictive_behaviours"
-        "title":
-          "en": "Addictive behaviours",
+      "title":
+        "en": "Addictive behaviours"
     - "name": "cancer"
-        "title":
-          "en": "Cancer",
+      "title":
+        "en": "Cancer"
     - "name": "cardiovascular_diseases"
-        "title":
-          "en": "Cardiovascular diseases",
+      "title":
+        "en": "Cardiovascular diseases"
     - "name": "respiratory_diseases"
-        "title":
-          "en": "Respiratory diseases",
+      "title":
+        "en": "Respiratory diseases"
     - "name": "neurological_diseases"
-        "title":
-          "en": "Neurological diseases",
+      "title":
+        "en": "Neurological diseases"
     - "name": "musculoskeletal_diseases"
-        "title":
-          "en": "Musculoskeletal diseases",
+      "title":
+        "en": "Musculoskeletal diseases"
     - "name": "chronic_diseases"
-        "title":
-          "en": "Chronic diseases",
+      "title":
+        "en": "Chronic diseases"
     - "name": "non_communicable_diseases"
-        "title":
-          "en": "Non-communicable diseases",
+      "title":
+        "en": "Non-communicable diseases"
     - "name": "communicable_diseases"
-        "title":
-          "en": "Communicable diseases",
+      "title":
+        "en": "Communicable diseases"
     - "name": "general_epidemiology"
-        "title":
-          "en": "General epidemiology",
+      "title":
+        "en": "General epidemiology"
     - "name": "biomedicine"
-        "title":
-          "en": "Biomedicine",
+      "title":
+        "en": "Biomedicine"
     - "name": "genetics"
-        "title":
-          "en": "Genetics",
+      "title":
+        "en": "Genetics"
     - "name": "genomics"
-        "title":
-          "en": "Genomics",
+      "title":
+        "en": "Genomics"
     - "name": "other_omics"
-        "title":
-          "en": "Other -omics",
+      "title":
+        "en": "Other -omics"
     - "name": "medical_imaging"
-        "title":
-          "en": "Medical imaging",
+      "title":
+        "en": "Medical imaging"
     - "name": "other"
       "title":
         "en": "Other"
