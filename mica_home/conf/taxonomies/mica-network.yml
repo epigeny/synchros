@@ -1484,6 +1484,96 @@
         "en": "Empty"
       "description":
         "en": ""
+- "name": "healthTopic"
+  "title":
+    "en": "Health topic"
+  "description":
+    "en": "Main health topic of the network or initiative."
+  "attributes":
+    "field": "model.healthTopic"
+    "alias": "model-healthTopic"
+    "facet": "true"
+    "type": "keyword"
+    "facetPosition": "0"
+    "facetExpanded": "false"
+  "terms":
+    - "name": "ageing"
+        "title":
+          "en": "Ageing",
+    - "name": "mental_health"
+        "title":
+          "en": "Mental health",
+    - "name": "environmental_health"
+        "title":
+          "en": "Environmental health",
+    - "name": "occupational_health"
+        "title":
+          "en": "Occupational health",
+    - "name": "public_health"
+        "title":
+          "en": "Public health",
+    - "name": "social_environment"
+        "title":
+          "en": "Social environment",
+    - "name": "nutritional_health"
+        "title":
+          "en": "Nutritional health",
+    - "name": "reproductive_health"
+        "title":
+          "en": "Reproductive health",
+    - "name": "birth_infancy_childhood_health"
+        "title":
+          "en": "Birth, infancy and childhood health",
+    - "name": "addictive_behaviours"
+        "title":
+          "en": "Addictive behaviours",
+    - "name": "cancer"
+        "title":
+          "en": "Cancer",
+    - "name": "cardiovascular_diseases"
+        "title":
+          "en": "Cardiovascular diseases",
+    - "name": "respiratory_diseases"
+        "title":
+          "en": "Respiratory diseases",
+    - "name": "neurological_diseases"
+        "title":
+          "en": "Neurological diseases",
+    - "name": "musculoskeletal_diseases"
+        "title":
+          "en": "Musculoskeletal diseases",
+    - "name": "chronic_diseases"
+        "title":
+          "en": "Chronic diseases",
+    - "name": "non_communicable_diseases"
+        "title":
+          "en": "Non-communicable diseases",
+    - "name": "communicable_diseases"
+        "title":
+          "en": "Communicable diseases",
+    - "name": "general_epidemiology"
+        "title":
+          "en": "General epidemiology",
+    - "name": "biomedicine"
+        "title":
+          "en": "Biomedicine",
+    - "name": "genetics"
+        "title":
+          "en": "Genetics",
+    - "name": "genomics"
+        "title":
+          "en": "Genomics",
+    - "name": "other_omics"
+        "title":
+          "en": "Other -omics",
+    - "name": "medical_imaging"
+        "title":
+          "en": "Medical imaging",
+    - "name": "other"
+      "title":
+        "en": "Other"
+      "description":
+        "en": ""
 - "name": "socioEnvContext"
   "title":
     "en": "Socio-environmental context"
