@@ -66,3 +66,16 @@ mica_restore:
 
 mongo-restore:
 	docker run -it --rm --network synchros_default -v $(backup)/mongo:/tmp/dump mongo bash -c 'mongorestore -v --host mongo:27017 /tmp/dump'
+
+access-log:
+	zcat /var/log/apache2/other_vhosts_access.log.*gz >  /tmp/access.log
+	cat  /var/log/apache2/other_vhosts_access.log.1   >> /tmp/access.log
+	cat  /var/log/apache2/other_vhosts_access.log     >> /tmp/access.log
+
+report-all: access-log
+	goaccess /tmp/access.log -o report-all.html --log-format=VCOMMON --ignore-crawlers
+
+report: access-log
+	cat /tmp/access.log | grep "^repository.synchros.eu" | grep -v "3.34.2.221" | grep -v admin | grep -v "/.env" | grep -v /css | grep -v /js | grep -v /fonts | grep -v /assets | grep -v /ws | grep -v /app | grep -v php | grep -v robots.txt | grep -v /wp-content | grep -v /api | grep -v bower_components | grep GET | grep -v /data | grep -v python-requests > /tmp/access-repo.log
+	goaccess /tmp/access-repo.log -o repository.synchros.eu-report.html --log-format=VCOMMON --ignore-crawlers
+
