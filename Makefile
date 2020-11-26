@@ -76,7 +76,7 @@ report-all: access-log
 	goaccess /tmp/access.log -o report-all.html --log-format=VCOMMON --ignore-crawlers
 
 report: access-log
-	cat /tmp/access.log | grep "^repository.synchros.eu" | grep -v "3.34.2.221" | grep -v admin | grep -v "/.env" | grep -v /css | grep -v /js | grep -v /fonts | grep -v /assets | grep -v /ws | grep -v /app | grep -v php | grep -v robots.txt | grep -v /wp-content | grep -v /api | grep -v bower_components | grep GET | grep -v /data | grep -v python-requests > /tmp/access-repo.log
-	goaccess /tmp/access-repo.log -o repository.synchros.eu-report.html --log-format=VCOMBINED --ignore-crawlers --geoip-database ../../GeoLite2-City_20201117/GeoLite2-City.mmdb
+	cat /tmp/access.log | grep "^repository.synchros.eu" | grep -v "3.34.2.221" | grep -v bot | grep -v crawler | grep -v zgrab | grep -v admin | grep -v json | grep -v "/.env" | grep -v /css | grep -v /js | grep -v /fonts | grep -v /assets | grep -v /ws | grep -v /app | grep -v php | grep -v robots.txt | grep -v /wp-content | grep -v /api | grep -v bower_components | grep GET | grep -v /data | grep -v python-requests > /tmp/access-repo.log
+	goaccess /tmp/access-repo.log -o repository.synchros.eu-report.html --log-format=VCOMBINED --ignore-crawlers --ignore-status=404 --geoip-database ../../GeoLite2-City_20201117/GeoLite2-City.mmdb
 	mv repository.synchros.eu-report.html /var/www/report/index.html
 
