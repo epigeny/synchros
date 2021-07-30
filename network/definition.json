@@ -369,7 +369,7 @@
             "description": "t(initiative.harmonizationStrategy.description)",
             "titleMap": [
               {
-                "value": "propective",
+                "value": "prospective",
                 "name": "t(initiative.harmonizationStrategy.prospective)"
               },
               {
