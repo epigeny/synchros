@@ -111,9 +111,25 @@
                   </blockquote>
                 </#if>
               </div>
-              <#if network.model.informationStatus??>
-                <div class="card-footer">
-                  <dl class="row mb-0">
+              <div class="card-footer">
+                <#if cartEnabled && networksCartEnabled>
+                  <div>
+                  <#if user??>
+                    <a id="cart-add" href="javascript:void(0)" onclick="onNetworksCartAdd('${network.id}')" style="display: none;">
+                        <@message "sets.cart.add-to-cart"/> <i class="fas fa-cart-plus"></i>
+                    </a>
+                    <a id="cart-remove" href="javascript:void(0)" onclick="onNetworksCartRemove('${network.id}')" style="display: none;">
+                        <@message "sets.cart.remove-from-cart"/> <i class="fas fa-cart-arrow-down"></i>
+                    </a>
+                  <#else>
+                    <a href="${contextPath}/signin?redirect=${contextPath}/network/${network.id}">
+                        <@message "sets.cart.add-to-cart"/> <i class="fas fa-cart-plus"></i>
+                    </a>
+                  </#if>
+                  </div>
+                </#if>
+                <#if network.model.informationStatus??>
+                  <dl class="row mt-2 mb-0">
                     <dt class="col-sm-2">
                       <@message "initiative.informationStatus.title"/>
                     </dt>
@@ -130,8 +146,8 @@
                       </#if>
                     </dd>
                   </dl>
-                </div>
-              </#if>
+                </#if>
+              </div>
             </div>
           </div>
         </div>
